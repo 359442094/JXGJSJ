@@ -1,0 +1,229 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<title>风格案例列表页</title>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/></meta>
+<link type="text/css" media="all" rel="stylesheet" href="static/css/css.css"></link>
+<script src="static/js/tb1.js" type="text/javascript"></script>
+<!--导航js-->
+</head>
+<body>
+<!--top-->
+<div class="top" >
+  <div class="w_box">
+    <div class="logo"><a href="/toIndex"><img style="width: 250px;height: 100px;" th:src="${logo.cvalue}" /></a></div>
+    <ul class="tel">
+      <li><b>免费客服电话</b></li>
+      <div th:each="service:${services}">
+        <li style="color: blue;" th:text="${service.cvalue}"></li>
+      </div>
+    </ul>
+    <div class="mu">
+      <ul th:each="menu:${menus}">
+        <div th:if="${menu.mid  == 1}">
+          <li class="on"><a th:href="${menu.mpath}" th:text="${menu.mname}"></a></li>
+        </div>
+        <div th:if="${menu.mid  != 1}">
+          <li class="off"><a th:href="${menu.mpath}" th:text="${menu.mname}"></a></li>
+        </div>
+        <!--  <li class="off"><a href="/toIndex">施工工艺</a></li>
+        <li class="off"><a href="/toIndex">装饰资讯</a></li>
+        <li class="off"><a href="/toIndex">关于我们</a></li>-->
+      </ul>
+    </div>
+  </div>
+</div>
+<!--con-->
+<div class="con">
+  <div class="w_box">
+    <div class="hang"><a href="#">首页</a> > <a href="#">风格案例</a></div>
+    <div class="shaixuan">
+      <div class="sx_1"> <span>装修风格</span>
+        <ul>
+          <li class="pm_2" id="b_1"><a href="##" onclick='b1()'>全部</a></li>
+          <li class="pm_1" th:each="stype,Status:${stypes}">
+            <span th:if="${caseImagepage != null}">
+              <a th:href="@{'/toCaseLike?index='+${caseImagepage.pageNum}+
+             '&&size='+${caseImagepage.pageSize}+'&&style='+${stype.sname}}" onclick='b2()'
+                 th:text="${stype.sname}">
+              </a>
+            </span>
+            <span th:if="${caseImagepage == null}">
+              <a href="javascript:void(0);alert('无此内容');" onclick='b2();alert("无此内容");' th:text="${stype.sname}"></a>
+            </span>
+          </li>
+        </ul>
+
+      </div>
+      <div class="xx"></div>
+      <div class="sx_1"> <span>装修户型</span>
+        <ul>
+          <li class="pm_2" id="a_1"><a href="##" onclick='a1()'>全部</a></li>
+          <span th:if="${caseImagepage != null
+    && caseImagepage.pages != null && caseImagepage.pages != 0
+    && caseImagepage.pageNum != null && caseImagepage.pages != 0 }">
+            <li class="pm_1" th:each="type:${typeAll}">
+            <a th:href="@{'/toCaseLike?index='+${caseImagepage.pageNum}+
+             '&&size='+${caseImagepage.pageSize}+'&&type='+${type.type}}" onclick='a2()'
+               th:text="${type.type}">
+            </a>
+          </li>
+          </span>
+          <span th:if="${caseImagepage == null
+    || caseImagepage.pages == null || caseImagepage.pages == 0
+    || caseImagepage.pageNum == null || caseImagepage.pages == 0 }">
+            <li class="pm_1" th:each="type:${typeAll}">
+            <a href="javascript:void(0);alert('无此内容');" onclick='b2();'
+               th:text="${type.type}">
+            </a>
+          </li>
+          </span>
+        </ul>
+      </div>
+      <div class="xx"></div>
+      <div class="sx_1"> <span>房屋面积</span>
+        <ul>
+          <li class="pm_2" id="c_1"><a href="##" onclick='c1()'>全部</a></li>
+          <li class="pm_1" id="c_2" th:if="${caseImagepage != null
+    && caseImagepage.pages != null && caseImagepage.pages != 0
+    && caseImagepage.pageNum != null && caseImagepage.pages != 0 }">
+            <a th:href="@{'/toCaseLike?index='+${caseImagepage.pageNum}+
+             '&&size='+${caseImagepage.pageSize}+'&&startSize=100'}" onclick='c2()'>100m2以下</a></li>
+          <li class="pm_1" id="c_3"><a th:href="@{'/toCaseLike?index='+${caseImagepage.pageNum}+
+             '&&size='+${caseImagepage.pageSize}+'&&startSize=100&&endSize=140'}" onclick='c3()'>100-140m2</a></li>
+          <li class="pm_1" id="c_4"><a th:href="@{'/toCaseLike?index='+${caseImagepage.pageNum}+
+             '&&size='+${caseImagepage.pageSize}+'&&startSize=140&&endSize=200'}" onclick='c4()'>140-200m2</a></li>
+          <li class="pm_1" id="c_5"><a th:href="@{'/toCaseLike?index='+${caseImagepage.pageNum}+
+             '&&size='+${caseImagepage.pageSize}+'&&startSize=200&&endSize=300'}" onclick='c5()'>200-300m2</a></li>
+          <li class="pm_1" id="c_6"><a th:href="@{'/toCaseLike?index='+${caseImagepage.pageNum}+
+             '&&size='+${caseImagepage.pageSize}+'&&endSize=300'}" onclick='c6()'>300m2以上</a></li>
+        </ul>
+      </div>
+      <script src="/static/js/dj.js" type="text/javascript"></script>
+    </div>
+
+
+
+    <div class="wok_sou">
+      <div th:if="${caseImagepage == null
+    || caseImagepage.pages == null || caseImagepage.pages == 0
+    || caseImagepage.pageNum == null || caseImagepage.pages == 0 }" style="border:1px solid #8A2BE2;height: 191px;text-align: center;vertical-align: middle;line-height: 345px;">
+        <img src="/static/images/notContent.jpg"/>
+      </div>
+      <ul th:if="${caseImageList != null}">
+        <li th:each="case:${caseImageList}">
+          <div class="zhezhao">
+            <div class="z_Op"><img th:src="${case.user.upath}" />
+              <p><span th:text="${case.user.name}"></span>/<span th:text="${case.user.type}"></span><br>
+                设计价值：<span th:text="${case.user.designValue}"></span></span> <span>/ m<sup>2</sup></span></p>
+            </div>
+            <div class="z_xp">
+              <div class="qns"><a href="#">预约设计</a></div>
+              <div class="qns2"><a th:href="@{'/toCase_XX/'+${case.did}}">查看本案</a></div>
+            </div>
+          </div>
+          <img width="388" height="280" th:src="${case.path}" /> <br>
+          <span th:text="${case.title}"></span>
+        </li>
+      </ul>
+    </div>
+
+      <div class="fanye" th:if="${caseImagepage != null
+    && caseImagepage.pages != null && caseImagepage.pages != 0
+    && caseImagepage.pageNum != null && caseImagepage.pages != 0 }">
+        <div style="height:35px;vertical-align: middle;width:1200px;margin: 0px auto;text-align: center;">
+          <span style="width: 380px;text-align: center;height:35px;"></span>
+          <span style="width: 500px;text-align: center;height:35px;">
+
+            <span th:if="${caseImagepage.pageNum -1  > 0}">
+              <span style="margin-left: 5px;" class="ff_1">
+                <a th:href="@{'/toCase?index=1&&size='+${caseImagepage.pageSize}}">首页</a>
+              </span>
+              <span style="margin-left: 5px;" class="ff_1">
+                <a th:href="@{'/toCase?index='+${caseImagepage.pageNum  - 1 }+
+                '&&size='+${caseImagepage.pageSize}}">上一页
+                </a>
+              </span>
+            </span>
+            <span th:if="${caseImagepage.pageNum -1  <=  0}">
+              <span style="margin-left: 5px;" class="ff_1">
+               <a onclick="alert('已经是第一页了！');" style="color:#C0C0C0 " href="#">首页</a>
+              </span>
+              <span style="margin-left: 5px;" class="ff_1">
+               <a onclick="alert('已经是第一页了！');" style="color:#C0C0C0 " href="#">上一页</a>
+              </span>
+            </span>
+            <span th:if="${caseImagepage.pageNum  !=  caseImagepage.pages}">
+              <span class="ff_1" style="margin-left:5px;">
+             <a th:href="@{'/toCase?index='+${caseImagepage.pageNum  + 1 }+
+             '&&size='+${caseImagepage.pageSize}}">下一页
+             </a>
+              </span>
+              <span style="margin-left: 5px;" class="ff_1">
+                <a th:href="@{'/toCase?index='+${caseImagepage.pages}+
+             '&&size='+${caseImagepage.pageSize}}">末页</a>
+              </span>
+            </span>
+            <span th:if="${caseImagepage.pageNum  ==  caseImagepage.pages}">
+              <span class="ff_1" style="margin-left: 5px;" >
+                <a onclick="alert('已经是最后一页了！');" style="color:#C0C0C0 " href="#">下一页</a>
+              </span>
+              <span class="ff_1" style="margin-left: 5px;" >
+                <a onclick="alert('已经是最后一页了！');" style="color:#C0C0C0 " href="#">末页</a>
+              </span>
+            </span>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!--foot--><!--foot-->
+<div class="foot">
+  <div class="w_box" >
+    <div class="hhh" style="margin-top: 60px;">
+      <div class="f_q">
+        <div class="xdh"> <span>关于我们</span><br/>
+
+          <a href="#">公司荣誉</a><br/>
+          <a href="#">发展历程</a><br/>
+          <a href="#">企业文化</a><br/>
+          <a href="#">联系我们</a> </div>
+      </div>
+      <div class="f_q">
+        <div class="xdh"> <span>装饰资讯</span><br/>
+          <a href="#">公司新闻</a><br/>
+          <a href="#">行业动态</a><br/>
+          <a href="#">装修知识</a> </div>
+      </div>
+      <div class="f_q">
+        <div class="xdh"> <span>风格案例</span><br/>
+          <a href="#">欧式</a><br/>
+          <a href="#">简约</a><br/>
+          <a href="#">田园</a><br/>
+          <a href="#">地中海</a><br/>
+          <a href="#">中式</a> </div>
+      </div>
+      <div class="f_ri">
+        <div class="xdh2"> <span class="a_1">联系方式</span><br/>
+          <span th:each="service,sStatus:${services}">
+              <span class="a_2" th:text="${service.cvalue}"></span>
+          </span>
+
+          <span class="a_3">免费客户服务热线</span> </div>
+        <div class="weix" th:each="wechat_qrcode:${wechat_qrcodes}">
+          <img style="width: 300px;height: 180px;" th:src="${wechat_qrcode.cvalue}" />
+          <div style="width: 300px;">匠心国际设计官方微信</div>
+        </div>
+      </div>
+    </div>
+    <div th:each="copyright:${copyrights}">
+      <div class="banquan" style="color: #000000;" th:text="${copyright.cvalue}"></div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>后台管理</title>
+    <link rel="stylesheet" href="/static/layui/css/layui.css">
+    <link rel="stylesheet" href="/static/css/global.css">
+    <link rel="stylesheet" href="/static/icheck/minimal/red.css">
+</head>
+<body class="layui-layout-body">
+<div class="layui-layout layui-layout-admin">
+    <div class="layui-header">
+        <div class="layui-logo">后台管理</div>
+        <ul class="layui-nav layui-layout-right">
+            <li class="layui-nav-item layui-nav-itemed">
+                <a href="javascript:;">
+                    <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
+                    贤心
+                </a>
+                <dl class="layui-nav-child">
+                    <dd><a href="">基本资料</a></dd>
+                    <dd><a href="">安全设置</a></dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item layui-nav-itemed"><a href="">退了</a></li>
+        </ul>
+    </div>
+
+    <div class="layui-side layui-bg-black">
+        <div class="layui-side-scroll">
+            <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+            <ul class="layui-nav layui-nav-tree"  lay-filter="test">
+                <li class="layui-nav-item layui-nav-itemed">
+                    <a class="" href="javascript:;">系统配置</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="/toMenu">菜单配置</a></dd>
+                        <dd><a href="/toService">客服电话</a></dd>
+                        <dd><a href="/toBanner">轮播图片</a></dd>
+                        <dd><a href="/toQrCode">扫描图片</a></dd>
+                        <dd><a href="/toBrand">合作品牌</a></dd>
+                        <dd><a href="/toLogo">网站图标</a></dd>
+                        <dd><a href="/toCopyright">版权说明</a></dd>
+                        <dd><a href="/toAboutusAdmin">关于我们</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item layui-nav-itemed">
+                    <a href="javascript:;">用户管理</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="/toUserAdmin">用户列表</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item layui-nav-itemed">
+                    <a href="javascript:;">风格管理</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="style.html">风格列表</a></dd>
+                        <dd><a href="style_details.html">风格列表详情</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item layui-nav-itemed">
+                    <a href="javascript:;">楼房管理</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="house.html">楼房列表</a></dd>
+                        <dd><a href="house_type.html">楼房类型</a></dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+    </div>
+  
+  <div class="layui-body">
+    <!-- 内容主体区域 -->
+    <div style="padding: 15px;">
+        <fieldset class="layui-elem-field">
+            <legend>系统配置 - 版权说明</legend>
+            <div class="layui-field-box">
+                <hr>
+                <div class="layui-btn-group">
+                    <button class="layui-btn layui-btn-xs dw-refresh">
+                        <i class="layui-icon">&#x1002;</i>刷新
+                    </button>
+                </div>
+                <hr>
+              <table class="layui-table">
+                  <colgroup>
+                      <col width="150">
+                      <col width="150">
+                      <col>
+                      <col>
+                  </colgroup>
+                  <thead>
+                      <tr>
+                      <th class="selectAll"><input type="checkbox"></th>
+                      <th>版权编号</th>
+                      <th>版权说明</th>
+                      <th style="text-align:center;">操作</th>
+                      </tr> 
+                  </thead>
+                  <tbody>
+                      <tr th:each="copyright:${copyrights}">
+                      <td><input type="checkbox" name="id" class="id" th:value="${copyright.cid}"></td>
+                      <td th:text="${copyright.cid}">1</td>
+                      <td th:text="${copyright.cvalue}"></td>
+                      <td class="text-center">
+                        <div class="layui-btn-group">
+                          <button class="layui-btn layui-btn-xs layui-btn-normal dw-dailog"
+                                  dw-url="/toCopyrightUpdate"
+                                  onclick="$(this).attr('dw-url',$(this).attr('dw-url')+'/'+$(this).parent().parent().parent().find('.id').val());"
+                                  dw-title="编辑版权说明内容">
+                            <i class="layui-icon">&#xe642;</i>编辑
+                          </button>
+                          <button class="layui-btn layui-btn-xs layui-btn-danger dw-delete"
+                                  dw-url="/copyright_Delete"
+                                  onclick="$(this).attr('dw-url',$(this).attr('dw-url')+'/'+$(this).parent().parent().parent().find('.id').val());"
+                                  dw-title="此版权信息">
+                            <i class="layui-icon">&#xe640;</i>删除
+                          </button>
+                        </div>
+                      </td>
+                      </tr>
+                  </tbody>
+              </table>
+            </div>
+        </fieldset>
+    </div>
+  </div>
+  
+  
+  <div class="layui-footer">
+    <!-- 底部固定区域 -->
+    © layui.com - 底部固定区域
+  </div>
+</div>
+<script type="text/javascript" src="/static/javascript/jquery.min.js"></script>
+<script type="text/javascript" src="/static/layui/layui.js"></script>
+<script type="text/javascript" src="/static/icheck/icheck.js"></script>
+<script type="text/javascript" src="/static/javascript/public_delete_submit.js"></script>
+</body>
+</html>
