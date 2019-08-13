@@ -17,7 +17,7 @@ public class IndexController {
     private IndexData indexData;
 
     @ShowLogger(info = "主页")
-    @RequestMapping(path = "/",method = RequestMethod.GET)
+    @RequestMapping(path = "/index",method = RequestMethod.GET)
     public String toIndex(Model model){
         indexData.getIndexData(model);
         return "index";
