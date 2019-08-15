@@ -55,7 +55,7 @@ public class FtpClientUtil {
             ftp.setFileType(FTPClient.BINARY_FILE_TYPE);
             if (!FTPReply.isPositiveCompletion(reply)) {
                 ftp.disconnect();
-                System.out.println("FTP服务器 拒绝连接");
+                log.info("FTP服务器 拒绝连接");
                 return success;
             }
             ftp.changeWorkingDirectory(ftpClient.getUploadPath());

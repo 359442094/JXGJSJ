@@ -29,7 +29,7 @@
 		},function(){
 			ul_option.hide();
 		});
-
+		/*
 		var li_option=ul_option.find('li');
 		li_option.on('click',function(){
 			$(this).addClass('selected').siblings().removeClass('selected');
@@ -37,7 +37,7 @@
 			select_showbox.text(value);
 			ul_option.hide();
 		});
-
+*/
 		li_option.hover(function(){
 			$(this).addClass('hover').siblings().removeClass('hover');	
 		},function(){

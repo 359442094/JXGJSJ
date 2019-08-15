@@ -5,16 +5,16 @@ import cn.blooming.jxgjsj.api.ftp.FtpClientUtil;
 import cn.blooming.jxgjsj.api.redis.RedisUtil;
 import cn.blooming.jxgjsj.model.entity.Config;
 import cn.blooming.jxgjsj.service.ConfigService;
+import io.swagger.annotations.Api;
 import lombok.extern.log4j.Log4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import java.io.*;
-
+@Api(tags = {"关于我们配置"})
 @Log4j
 @Controller
 public class AboutusAdminController {

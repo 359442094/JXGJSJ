@@ -4,6 +4,7 @@ import cn.blooming.jxgjsj.api.redis.RedisUtil;
 import cn.blooming.jxgjsj.model.entity.Config;
 import cn.blooming.jxgjsj.service.ConfigService;
 import com.alibaba.fastjson.JSON;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -15,6 +16,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import java.util.List;
 
 @Controller
+@Api(tags = {"版权配置"})
 public class CopyrightController {
 
     @Autowired

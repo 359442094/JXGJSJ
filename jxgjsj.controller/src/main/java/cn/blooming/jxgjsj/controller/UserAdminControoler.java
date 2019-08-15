@@ -4,7 +4,7 @@ import cn.blooming.jxgjsj.api.ftp.FtpClientUtil;
 import cn.blooming.jxgjsj.api.redis.RedisUtil;
 import cn.blooming.jxgjsj.model.entity.User;
 import cn.blooming.jxgjsj.service.UserService;
-import com.alibaba.fastjson.JSON;
+import io.swagger.annotations.Api;
 import lombok.extern.log4j.Log4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -20,6 +20,7 @@ import java.util.List;
 /**
  * 用户管理配置
  * */
+@Api(tags = {"用户管理配置"})
 @Controller
 @Log4j
 public class UserAdminControoler {

@@ -2,13 +2,12 @@ package cn.blooming.jxgjsj.controller;
 
 import cn.blooming.jxgjsj.api.CaseDetailImage;
 import cn.blooming.jxgjsj.api.CaseDetailResponse;
-import cn.blooming.jxgjsj.api.PublicData;
 import cn.blooming.jxgjsj.api.redis.RedisUtil;
 import cn.blooming.jxgjsj.model.annotation.ShowLogger;
 import cn.blooming.jxgjsj.model.entity.*;
 import cn.blooming.jxgjsj.service.*;
-import cn.blooming.jxgjsj.service.exte.DetailsService;
 import com.alibaba.fastjson.JSON;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -24,6 +23,7 @@ import java.util.List;
 /**
  * 设计团队详情
  * */
+@Api(tags = {"设计团队详情"})
 @Controller
 @SessionAttributes(value = {
         "menus", "services", "copyrights", "wechat_qrcodes","logo","user","teamDetail"

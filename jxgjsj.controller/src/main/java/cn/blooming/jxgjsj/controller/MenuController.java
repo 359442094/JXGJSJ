@@ -4,6 +4,7 @@ import cn.blooming.jxgjsj.api.redis.RedisUtil;
 import cn.blooming.jxgjsj.model.entity.Menu;
 import cn.blooming.jxgjsj.service.MenuService;
 import com.alibaba.fastjson.JSON;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -11,7 +12,7 @@ import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-
+@Api(tags = {"菜单配置"})
 @Controller
 public class MenuController {
 

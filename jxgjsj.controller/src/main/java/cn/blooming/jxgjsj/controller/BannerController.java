@@ -5,6 +5,7 @@ import cn.blooming.jxgjsj.api.redis.RedisUtil;
 import cn.blooming.jxgjsj.model.entity.Config;
 import cn.blooming.jxgjsj.service.ConfigService;
 import com.alibaba.fastjson.JSON;
+import io.swagger.annotations.Api;
 import lombok.extern.log4j.Log4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -20,6 +21,7 @@ import java.util.List;
 /**
  * 轮播图片配置化
  * */
+@Api(tags = {"轮播图片配置化"})
 @Controller
 @Log4j
 public class BannerController {

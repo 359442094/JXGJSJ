@@ -7,6 +7,7 @@ import cn.blooming.jxgjsj.model.entity.Menu;
 import cn.blooming.jxgjsj.service.ConfigService;
 import cn.blooming.jxgjsj.service.MenuService;
 import com.alibaba.fastjson.JSON;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -21,6 +22,7 @@ import java.util.List;
 /**
  * 关于我们显示数据
  */
+@Api(tags = {"关于我们显示数据"})
 @Controller
 @SessionAttributes(value = {
         "menus", "services", "copyrights", "wechat_qrcodes", "logo", "aboutus"

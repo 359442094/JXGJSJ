@@ -85,7 +85,7 @@
 	
 
 	//IPAI
-
+	/*
 	$("#focusindex").on("swipeleft",function(){
 
 		index -= 1;
@@ -95,7 +95,7 @@
 		showPics(index);
 
 	});
-
+	*/
 $("#focusindex").on("swiperight",function(){
 
 		index += 1;

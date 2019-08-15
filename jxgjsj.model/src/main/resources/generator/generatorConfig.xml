@@ -8,7 +8,7 @@
         <sqlMapGenerator targetPackage="mappers" targetProject="src/main/resources" />
         <javaClientGenerator targetPackage="cn.blooming.jxgjsj.model.mapper" targetProject="src/main/java" type="XMLMAPPER" />
 
-        <table tableName="user"></table>
+        <table tableName="community"></table>
 
     </context>
 </generatorConfiguration>

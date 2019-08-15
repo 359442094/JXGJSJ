@@ -8,6 +8,7 @@ import cn.blooming.jxgjsj.service.*;
 import cn.blooming.jxgjsj.service.exte.DetailsService;
 import com.alibaba.fastjson.JSON;
 import com.github.pagehelper.Page;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -23,6 +24,7 @@ import java.util.List;
 /**
  * 风格案例
  */
+@Api(tags = {"风格案例"})
 @Controller
 @SessionAttributes(value = {
         "menus", "services", "copyrights",

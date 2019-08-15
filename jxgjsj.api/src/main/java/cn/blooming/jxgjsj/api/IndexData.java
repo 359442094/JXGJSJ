@@ -20,7 +20,15 @@ import java.util.List;
 
 @Component
 @SessionAttributes(value = {
-        "menus", "services", "copyrights", "wechat_qrcodes","stypes","banners","brands","logo","users"
+        "menus",
+        "services",
+        "copyrights",
+        "wechat_qrcodes",
+        "stypes",
+        "banners",
+        "brands",
+        "logo",
+        "users"
 })
 public class IndexData {
 
@@ -37,7 +45,7 @@ public class IndexData {
 
     public void getIndexData(Model model){
         //网页图标
-        Config logo;
+        Config logo=new Config();
         if(StringUtils.isEmpty(redisUtil.get("logo"))){
             logo = configService.getConfigs("logo").get(0);
             redisUtil.set("logo",logo);
@@ -79,13 +87,22 @@ public class IndexData {
         }
 
         //轮播项
-        List<Config> banners =configService.getConfigs("banner");
-        redisUtil.set("banners",JSON.toJSONString(banners));
+        List<Config> banners;
+        if(StringUtils.isEmpty(redisUtil.get("banners"))){
+            banners =configService.getConfigs("banner");
+            redisUtil.set("banners",JSON.toJSONString(banners));
+        }else{
+            banners = (List<Config>)JSON.parse(redisUtil.get("banners").toString());
+        }
 
         //合作品牌项
-        List<Config> brands =configService.getConfigs("brand");
-        redisUtil.set("brands",JSON.toJSONString(brands));
-
+        List<Config> brands;
+        if(StringUtils.isEmpty(redisUtil.get("brands"))){
+            brands =configService.getConfigs("brand");
+            redisUtil.set("brands",JSON.toJSONString(brands));
+        }else{
+            brands = (List<Config>)JSON.parse(redisUtil.get("brands").toString());
+        }
         //装修风格项
         List<DecorationStype> stypes ;
         if(StringUtils.isEmpty(redisUtil.get("stypes"))){
