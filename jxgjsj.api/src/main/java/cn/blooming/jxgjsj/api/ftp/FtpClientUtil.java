@@ -137,12 +137,12 @@ public class FtpClientUtil {
         }
         return false;
     }
-
-    /*public static void main(String[] args) throws FileNotFoundException {
+    /*
+    public static void main(String[] args) throws FileNotFoundException {
         FtpClientUtil ftpClientUtil=new FtpClientUtil();
         InputStream fileInputStream=new FileInputStream("D:\\img_zhong.jpg");
         boolean flag = ftpClientUtil.startUpload(fileInputStream, "abc.jpg");
-        log.info("flag:"+flag);
-    }*/
-
+        log.info("flag:");
+    }
+    */
 }
