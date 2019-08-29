@@ -2,7 +2,6 @@ layui.use('upload', function(){
   var $ = layui.jquery
   ,upload = layui.upload;
 
-  alert($("input[name='uploadPath']").val());
   //普通图片上传
   var uploadInst = upload.render({
     elem: '#test1'
