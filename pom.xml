@@ -15,6 +15,7 @@
         <module>jxgjsj.controller</module>
         <module>jxgjsj.start</module>
         <module>jxgjsj.api</module>
+        <module>jxgjsj.common</module>
     </modules>
 
     <parent>

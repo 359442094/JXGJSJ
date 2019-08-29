@@ -1,10 +1,12 @@
 package cn.blooming.jxgjsj.controller;
 
 import cn.blooming.jxgjsj.api.redis.RedisUtil;
+import cn.blooming.jxgjsj.common.Context;
 import cn.blooming.jxgjsj.model.annotation.ShowLogger;
 import cn.blooming.jxgjsj.model.entity.User;
 import cn.blooming.jxgjsj.service.UserService;
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiModelProperty;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.log4j.Log4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,6 +22,22 @@ public class UserController {
     private RedisUtil redisUtil;
     @Autowired
     private UserService userService;
+
+    @ApiModelProperty(value = "登录用户",notes = "登录用户")
+    @ResponseBody
+    @RequestMapping(path = "/user/newLogin",method = RequestMethod.POST)
+    public User initUser(User user){
+
+        String sessionId = user.getName()+"&"+user.getPwd();
+        redisUtil.set("sessionId",sessionId);
+
+        if(!StringUtils.isEmpty(redisUtil.get("sessionId"))){
+            Context.initContext(sessionId);
+            User user1 = Context.getUser();
+            return user1;
+        }
+        return null;
+    }
 
     @ShowLogger(info = "查询单个用户")
     @ApiOperation(value = "查询单个用户",notes = "查询单个用户")

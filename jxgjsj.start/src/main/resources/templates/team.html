@@ -46,7 +46,7 @@
       <ul>
         <li th:each="user:${users}">
           <div class="touxiang"><img style="border-radius:50%"  width="120" height="120" th:src="${user.upath}" /></div>
-          <img th:src="${user.bpath}" />
+          <img width="380" height="240" th:src="${user.bpath}" />
           <div class="xsdfh">
             <p> <span class="sty2">
               <span th:text="${user.name}"></span>/<span th:text="${user.type}"></span>

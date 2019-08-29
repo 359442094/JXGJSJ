@@ -63,6 +63,7 @@ public class BannerController {
     @RequestMapping(path = "/banner_upload_create",method = RequestMethod.POST)
     @ResponseBody
     public boolean banner_upload_create(@RequestParam("file")MultipartFile file) throws IOException {
+
         if(!StringUtils.isEmpty(file)){
             String fileName = file.getOriginalFilename();
             boolean upload = ftpClientUtil.startUpload(file.getInputStream(), fileName);
