@@ -5,7 +5,8 @@ layui.use('upload', function(){
   //普通图片上传
   var uploadInst = upload.render({
     elem: '#test1'
-    ,url: $("#test1").next().val()
+      ,method: $("input[name='method']").val()
+      ,url: $("input[name='uploadPath']").val()
     ,before: function(obj){
       //预读本地文件示例，不支持ie8
       obj.preview(function(index, file, result){
@@ -35,7 +36,8 @@ layui.use('upload', function(){
     //普通图片上传
     var uploadInst = upload.render({
         elem: '#test11'
-        ,url: $("#test11").next().val()
+        ,method: $("input[name='method']").val()
+        ,url: $("input[name='uploadPath']").val()
         ,before: function(obj){
             //预读本地文件示例，不支持ie8
             obj.preview(function(index, file, result){

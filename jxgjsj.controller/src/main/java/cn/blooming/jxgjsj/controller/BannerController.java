@@ -2,10 +2,12 @@ package cn.blooming.jxgjsj.controller;
 
 import cn.blooming.jxgjsj.api.ftp.FtpClientUtil;
 import cn.blooming.jxgjsj.api.redis.RedisUtil;
+import cn.blooming.jxgjsj.model.annotation.ShowLogger;
 import cn.blooming.jxgjsj.model.entity.Config;
 import cn.blooming.jxgjsj.service.ConfigService;
 import com.alibaba.fastjson.JSON;
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import lombok.extern.log4j.Log4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -35,7 +37,9 @@ public class BannerController {
     @Autowired
     private ConfigService configService;
 
-    @RequestMapping(path = "/toBanner",method = RequestMethod.GET)
+    @ShowLogger(info = "跳转至轮播图片配置页面")
+    @ApiOperation(value = "跳转至轮播图片配置页面",notes = "跳转至轮播图片配置页面")
+    @RequestMapping(path = "/bannerAdmin",method = RequestMethod.GET)
     public String toBanner(Model model){
         List<Config> banners;
         if(StringUtils.isEmpty(redisUtil.get("banners"))){
@@ -48,21 +52,27 @@ public class BannerController {
         return "banner";
     }
 
-    @RequestMapping(path = "/toBannerInsert",method = RequestMethod.GET)
+    @ShowLogger(info = "跳转至轮播图片添加页面")
+    @ApiOperation(value = "跳转至轮播图片添加页面",notes = "跳转至轮播图片添加页面")
+    @RequestMapping(path = "/bannerAdmin/info",method = RequestMethod.GET)
     public String toBannerInsert(){
         return "create_banner";
     }
 
-    @RequestMapping(path = "/toBannerUpdate/{id}",method = RequestMethod.GET)
+    @ShowLogger(info = "查询单个轮播图片")
+    @ApiOperation(value = "查询单个轮播图片",notes = "查询单个轮播图片")
+    @RequestMapping(path = "/bannerAdmin/info/{id}",method = RequestMethod.GET)
     public String toBannerUpdate(Model model,@PathVariable("id") Integer id){
         Config banner = configService.getConfigById(id);
         model.addAttribute("banner",banner);
         return "update_banner";
     }
 
-    @RequestMapping(path = "/banner_upload_create",method = RequestMethod.POST)
+    @ShowLogger(info = "新增单个轮播图片")
+    @ApiOperation(value = "新增单个轮播图片",notes = "新增单个轮播图片")
+    @RequestMapping(path = "/bannerAdmin/info",method = RequestMethod.POST)
     @ResponseBody
-    public boolean banner_upload_create(@RequestParam("file")MultipartFile file) throws IOException {
+    public boolean bannerUploadCreate(@RequestParam("file")MultipartFile file) throws IOException {
         if(!StringUtils.isEmpty(file)){
             String fileName = file.getOriginalFilename();
             boolean upload = ftpClientUtil.startUpload(file.getInputStream(), fileName);
@@ -79,9 +89,11 @@ public class BannerController {
         return false;
     }
 
-    @RequestMapping(path = "/banner_upload_update",method = RequestMethod.POST)
+    @ShowLogger(info = "修改单个轮播图片")
+    @ApiOperation(value = "修改单个轮播图片",notes = "修改单个轮播图片")
+    @RequestMapping(path = "/bannerAdmin/info",method = RequestMethod.PUT)
     @ResponseBody
-    public boolean banner_upload_update(@RequestParam("id") Integer id,@RequestParam("file")MultipartFile file) throws IOException {
+    public boolean bannerUploadUpdate(@RequestParam("id") Integer id,@RequestParam("file")MultipartFile file) throws IOException {
         if(!StringUtils.isEmpty(file)){
             String fileName = file.getOriginalFilename();
             boolean upload = ftpClientUtil.startUpload(file.getInputStream(), fileName);
@@ -99,17 +111,21 @@ public class BannerController {
         return false;
     }
 
-    @RequestMapping(path = "/banner_delete/{id}",method = RequestMethod.POST)
+    @ShowLogger(info = "删除单个轮播图片")
+    @ApiOperation(value = "删除单个轮播图片",notes = "删除单个轮播图片")
+    @RequestMapping(path = "/bannerAdmin/info/{id}",method = RequestMethod.DELETE)
     @ResponseBody
-    public boolean banner_delete(@PathVariable("id")Integer id){
+    public boolean bannerDelete(@PathVariable("id")Integer id){
         boolean delete = configService.configDelete(id);
         redisUtil.delete("banners");
         return delete;
     }
 
-    @RequestMapping(path = "/banner_delete",method = RequestMethod.POST)
+    @ShowLogger(info = "删除多个轮播图片")
+    @ApiOperation(value = "删除多个轮播图片",notes = "删除多个轮播图片")
+    @RequestMapping(path = "/bannerAdmin/info",method = RequestMethod.DELETE)
     @ResponseBody
-    public boolean banner_delete(String [] ids){
+    public boolean bannerDelete(String [] ids){
         for (String id : ids) {
             id=id.replace("[","");
             id=id.replace("]","");

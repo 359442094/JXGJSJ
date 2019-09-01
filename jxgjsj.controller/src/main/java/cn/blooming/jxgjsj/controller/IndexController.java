@@ -3,6 +3,7 @@ package cn.blooming.jxgjsj.controller;
 import cn.blooming.jxgjsj.api.IndexData;
 import cn.blooming.jxgjsj.model.annotation.ShowLogger;
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import lombok.extern.log4j.Log4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -20,9 +21,10 @@ public class IndexController {
     @Autowired
     private IndexData indexData;
 
-    @ShowLogger(info = "主页")
+    @ShowLogger(info = "跳转至主页")
+    @ApiOperation(value = "跳转至主页",notes = "跳转至主页")
     @RequestMapping(path = "/",method = RequestMethod.GET)
-    public String toIndex(Model model){
+    public String index(Model model){
         indexData.getIndexData(model);
         return "index";
     }

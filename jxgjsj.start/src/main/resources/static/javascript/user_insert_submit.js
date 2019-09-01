@@ -6,7 +6,7 @@ layui.use(['element','form'], function(){
     var form = layui.form;
     //监听提交
     form.on('submit(user_insert_submit)', function(){
-        var action ="/user_insert";//表单提交URL地址
+        var action ="/user/info";//表单提交URL地址
         var name = $("input[name='name']").val(); //表单数据
         var pwd = $("input[name='pwd']").val(); //表单数据
         var designValue = $("input[name='designValue']").val(); //表单数据
@@ -42,7 +42,7 @@ layui.use(['element','form'], function(){
                     icon: 1,//提示的样式
                     time: 3000, //2秒关闭（如果不配置，默认是3秒）//设置后不需要自己写定时关闭了，单位是毫秒
                     end:function(){
-                        location.href='/toUserAdmin';
+                        location.href='/user/userAdmin';
                     }
                 });
             }else{
@@ -50,7 +50,7 @@ layui.use(['element','form'], function(){
                     icon: 2,//提示的样式
                     time: 3000, //2秒关闭（如果不配置，默认是3秒）//设置后不需要自己写定时关闭了，单位是毫秒
                     end:function(){
-                        location.href='/toUserAdmin';
+                        location.href='/user/userAdmin';
                     }
                 });
             }

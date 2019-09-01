@@ -6,7 +6,7 @@ layui.use(['element','form'], function(){
     var form = layui.form;
     //监听提交
     form.on('submit(user_update_submit)', function(){
-        var action ="/user_update";//表单提交URL地址
+        var action ="/user/info";//表单提交URL地址
         var uid = $("input[name='uid']").val(); //表单数据
         var name = $("input[name='name']").val(); //表单数据
         var pwd = $("input[name='pwd']").val(); //表单数据
@@ -22,7 +22,7 @@ layui.use(['element','form'], function(){
         var upath=$("#demo1").attr("src");
         var bpath=$("#demo11").attr("src");
 
-        $.post(action,{
+        /*$.post(action,{
             'uid':uid,
             'name':name,
             'pwd':pwd,
@@ -45,7 +45,7 @@ layui.use(['element','form'], function(){
                     icon: 1,//提示的样式
                     time: 3000, //2秒关闭（如果不配置，默认是3秒）//设置后不需要自己写定时关闭了，单位是毫秒
                     end:function(){
-                        location.href='/toUserAdmin';
+                        location.href='/user/userAdmin';
                     }
                 });
             }else{
@@ -53,9 +53,46 @@ layui.use(['element','form'], function(){
                     icon: 2,//提示的样式
                     time: 3000, //2秒关闭（如果不配置，默认是3秒）//设置后不需要自己写定时关闭了，单位是毫秒
                     end:function(){
-                        location.href='/toUserAdmin';
+                        location.href='/user/userAdmin';
                     }
                 });
+            }
+        });*/
+        $suffix = '?uid='+uid+
+            '&name='+name+
+            '&pwd='+pwd+
+            '&designValue='+designValue+
+            '&designInfo='+designInfo+
+            '&info='+info+
+            '&designNian='+designNian+
+            '&iphone='+iphone+
+            '&studentName='+studentName+
+            '&studentType='+studentType+
+            '&rote='+rote+
+            '&type='+type+
+            '&upath='+upath+
+            '&bpath='+bpath;
+        $.ajax({
+            url:action+$suffix,
+            method:"PUT",
+            success:function(result){
+                if(result == true){
+                    layer.msg('修改成功', {
+                        icon: 1,//提示的样式
+                        time: 3000, //2秒关闭（如果不配置，默认是3秒）//设置后不需要自己写定时关闭了，单位是毫秒
+                        end:function(){
+                            location.href='/serviceAdmin';
+                        }
+                    });
+                }else{
+                    layer.msg('修改失败', {
+                        icon: 2,//提示的样式
+                        time: 3000, //2秒关闭（如果不配置，默认是3秒）//设置后不需要自己写定时关闭了，单位是毫秒
+                        end:function(){
+                            location.href='/serviceAdmin';
+                        }
+                    });
+                }
             }
         });
         return false;//注释掉这行代码后，表单将会以普通方式提交表单，否则以ajax方式提交表单

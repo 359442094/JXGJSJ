@@ -13,6 +13,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
         "cn.blooming.jxgjsj.model",
         "cn.blooming.jxgjsj.service",
         "cn.blooming.jxgjsj.controller",
+        "cn.blooming.jxgjsj.common",
         "cn.blooming.jxgjsj.api",
         "cn.blooming.jxgjsj.start"
 })

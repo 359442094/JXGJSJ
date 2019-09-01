@@ -13,7 +13,8 @@
                 <legend>系统管理 - 编辑合作品牌</legend>
                 <div class="layui-field-box">
                         <div class="layui-form-item">
-                        		<input type="hidden" name="uploadPath" th:value="'/brand_upload_update?id='+${brand.cid}"/>
+                        		<input type="hidden" name="uploadPath" th:value="'/brandAdmin/upload/logo?id='+${brand.cid}"/>
+                            <input type="hidden" name="method" value="PUT"/>
                             <label class="layui-form-label">品牌图标</label>
                             <div class="layui-input-block">
                         					<div class="layui-upload">

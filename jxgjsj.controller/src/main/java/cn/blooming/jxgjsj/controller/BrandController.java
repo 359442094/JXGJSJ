@@ -2,10 +2,12 @@ package cn.blooming.jxgjsj.controller;
 
 import cn.blooming.jxgjsj.api.ftp.FtpClientUtil;
 import cn.blooming.jxgjsj.api.redis.RedisUtil;
+import cn.blooming.jxgjsj.model.annotation.ShowLogger;
 import cn.blooming.jxgjsj.model.entity.Config;
 import cn.blooming.jxgjsj.service.ConfigService;
 import com.alibaba.fastjson.JSON;
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import lombok.extern.log4j.Log4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -17,6 +19,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.Vector;
 
 /**
  * 合作品牌配置
@@ -35,8 +38,10 @@ public class BrandController {
     @Autowired
     private ConfigService configService;
 
-    @RequestMapping(path = "/toBrand",method = RequestMethod.GET)
-    public String toBrand(Model model){
+    @ShowLogger(info = "跳转至合作品牌后端页面")
+    @ApiOperation(value = "跳转至合作品牌后端页面",notes = "跳转至合作品牌页面")
+    @RequestMapping(path = "/brandAdmin",method = RequestMethod.GET)
+    public String brandAdmin(Model model){
         List<Config> brands;
         if(StringUtils.isEmpty(redisUtil.get("brands"))){
             brands = configService.getConfigs("brand");
@@ -48,21 +53,27 @@ public class BrandController {
         return "brand";
     }
 
-    @RequestMapping(path = "/toBrandInsert",method = RequestMethod.GET)
+    @ShowLogger(info = "跳转至合作品牌添加页面")
+    @ApiOperation(value = "跳转至合作品牌添加页面",notes = "跳转至合作品牌添加页面")
+    @RequestMapping(path = "/brandAdmin/info",method = RequestMethod.GET)
     public String toBrandInsert(){
         return "create_brand";
     }
 
-    @RequestMapping(path = "/toBrandUpdate/{id}",method = RequestMethod.GET)
+    @ShowLogger(info = "查询单个合作品牌")
+    @ApiOperation(value = "查询单个合作品牌",notes = "查询单个合作品牌")
+    @RequestMapping(path = "/brandAdmin/info/{id}",method = RequestMethod.GET)
     public String toBrandUpdate(Model model,@PathVariable("id")Integer id){
         Config brand = configService.getConfigById(id);
         model.addAttribute("brand",brand);
         return "update_brand";
     }
 
-    @RequestMapping(path = "/brand_upload_update",method = RequestMethod.POST)
+    @ShowLogger(info = "修改单个合作品牌LOGO")
+    @ApiOperation(value = "修改单个合作品牌LOGO",notes = "修改单个合作品牌LOGO")
+    @RequestMapping(path = "/brandAdmin/upload/logo",method = RequestMethod.PUT)
     @ResponseBody
-    public boolean brand_upload_update(@RequestParam("id")Integer id, @RequestParam("file")MultipartFile file) throws IOException {
+    public boolean brandUpload(@RequestParam("id")Integer id, @RequestParam("file")MultipartFile file) throws IOException {
         if(!StringUtils.isEmpty(file)){
             String fileName = file.getOriginalFilename();
             boolean upload = ftpClientUtil.startUpload(file.getInputStream(), fileName);
@@ -80,9 +91,11 @@ public class BrandController {
         return false;
     }
 
-    @RequestMapping(path = "/brand_upload_insert",method = RequestMethod.POST)
+    @ShowLogger(info = "新增单个合作品牌")
+    @ApiOperation(value = "新增单个合作品牌",notes = "新增单个合作品牌")
+    @RequestMapping(path = "/brandAdmin/info",method = RequestMethod.POST)
     @ResponseBody
-    public boolean brand_upload_insert(@RequestParam("file")MultipartFile file) throws IOException {
+    public boolean brandUploadSave(@RequestParam("file")MultipartFile file) throws IOException {
         if(!StringUtils.isEmpty(file)){
             String fileName = file.getOriginalFilename();
             boolean upload = ftpClientUtil.startUpload(file.getInputStream(), fileName);
@@ -99,17 +112,21 @@ public class BrandController {
         return false;
     }
 
-    @RequestMapping(path = "/brand_upload_delete/{id}",method = RequestMethod.POST)
+    @ShowLogger(info = "删除单个合作品牌")
+    @ApiOperation(value = "删除单个合作品牌",notes = "删除单个合作品牌")
+    @RequestMapping(path = "/brandAdmin/info/{id}",method = RequestMethod.DELETE)
     @ResponseBody
-    public boolean brand_upload_delete(@PathVariable("id")Integer id){
+    public boolean brandUploadDelete(@PathVariable("id")Integer id){
         boolean delete = configService.configDelete(id);
         redisUtil.delete("brands");
         return delete;
     }
 
-    @RequestMapping(path = "/brand_upload_delete",method = RequestMethod.POST)
+    @ShowLogger(info = "删除多个合作品牌")
+    @ApiOperation(value = "删除多个合作品牌",notes = "删除多个合作品牌")
+    @RequestMapping(path = "/brandAdmin/info",method = RequestMethod.DELETE)
     @ResponseBody
-    public boolean brand_upload_delete(String [] ids){
+    public boolean brandUploadDelete(String [] ids){
         for (String id : ids) {
             id=id.replace("[","");
             id=id.replace("]","");

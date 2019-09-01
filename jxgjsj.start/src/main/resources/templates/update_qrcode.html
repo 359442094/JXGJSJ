@@ -6,23 +6,24 @@
   <title>系统管理 - 编辑扫码图片</title>
   <link rel="stylesheet" href="/static/layui/css/layui.css">
 </head>
-<div class="layui-container">  
+<div class="layui-container">
     <div class="layui-row">
         <div class="layui-col-lg12">
             <fieldset class="layui-elem-field">
                 <legend>系统管理 - 编辑扫码图片</legend>
                 <div class="layui-field-box">
                         <div class="layui-form-item">
-                        	<input type="hidden" name="uploadPath" th:value="'/qrcode_upload_update?id='+${qrcode.cid}"/>
+                        	<input type="hidden" name="uploadPath" th:value="'/qrcode/upload/'+${qrcode.cid}"/>
+                            <input type="hidden" name="method" value="PUT"/>
                             <label class="layui-form-label">图片路径</label>
                             <div class="layui-input-block">
                         					<div class="layui-upload">
                         						<div class="layui-upload-list">
-    									<img width="300" th:src="${qrcode.cvalue}" height="100" class="layui-upload-img" id="demo1">
+    									<img width="300" th:src="${qrcode.cvalue}" height="100" class="layui-upload-img"  id="demo1">
     																	<p id="demoText"></p>
   																	</div>
   																	<button type="button" class="layui-btn" id="test1">选择图片</button>
-																	</div> 
+																	</div>
                             </div>
                         </div>
                 </div>

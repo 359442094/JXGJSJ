@@ -12,7 +12,7 @@
 <!--top-->
 <div class="top" >
   <div class="w_box">
-    <div class="logo"><a href="/toIndex"><img style="width: 250px;height: 100px;" th:src="${logo.cvalue}" /></a></div>
+    <div class="logo"><a href="/index"><img style="width: 250px;height: 100px;" th:src="${logo.cvalue}" /></a></div>
     <ul class="tel">
       <li><b>免费客服电话</b></li>
       <div th:each="service:${services}">
@@ -27,9 +27,9 @@
         <div th:if="${menu.mid  != 1}">
           <li class="off"><a th:href="${menu.mpath}" th:text="${menu.mname}"></a></li>
         </div>
-        <!--  <li class="off"><a href="/toIndex">施工工艺</a></li>
-        <li class="off"><a href="/toIndex">装饰资讯</a></li>
-        <li class="off"><a href="/toIndex">关于我们</a></li>-->
+        <!--  <li class="off"><a href="/index">施工工艺</a></li>
+        <li class="off"><a href="/index">装饰资讯</a></li>
+        <li class="off"><a href="/index">关于我们</a></li>-->
       </ul>
     </div>
   </div>
@@ -46,7 +46,7 @@
       <ul>
         <li th:each="user:${users}">
           <div class="touxiang"><img style="border-radius:50%"  width="120" height="120" th:src="${user.upath}" /></div>
-          <img th:src="${user.bpath}" />
+          <img width="380" height="240" th:src="${user.bpath}" />
           <div class="xsdfh">
             <p> <span class="sty2">
               <span th:text="${user.name}"></span>/<span th:text="${user.type}"></span>

@@ -1,10 +1,12 @@
 package cn.blooming.jxgjsj.controller;
 
 import cn.blooming.jxgjsj.api.redis.RedisUtil;
+import cn.blooming.jxgjsj.model.annotation.ShowLogger;
 import cn.blooming.jxgjsj.model.entity.Config;
 import cn.blooming.jxgjsj.service.ConfigService;
 import com.alibaba.fastjson.JSON;
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -16,7 +18,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import java.util.List;
 
 @Controller
-@Api(tags = {"版权配置"})
+@Api(tags = {"版权说明配置"})
 public class CopyrightController {
 
     @Autowired
@@ -24,7 +26,9 @@ public class CopyrightController {
     @Autowired
     private RedisUtil redisUtil;
 
-    @RequestMapping(path = "/toCopyright",method = RequestMethod.GET)
+    @ShowLogger(info = "跳转至版权说明后台页面")
+    @ApiOperation(value = "跳转至版权说明后台页面",notes = "跳转至版权说明后台页面")
+    @RequestMapping(path = "/copyrightAdmin",method = RequestMethod.GET)
     public String toCopyright(Model model){
         List<Config> copyrights;
         if(StringUtils.isEmpty(redisUtil.get("copyrights"))){
@@ -37,25 +41,31 @@ public class CopyrightController {
         return "copyright";
     }
 
-    @RequestMapping(path = "/toCopyrightUpdate/{id}",method = RequestMethod.GET)
+    @ShowLogger(info = "查询单个版权说明")
+    @ApiOperation(value = "查询单个版权说明",notes = "查询单个版权说明")
+    @RequestMapping(path = "/copyrightAdmin/{id}",method = RequestMethod.GET)
     public String toCopyrightUpdate(Model model,@PathVariable("id") Integer id){
         Config copyright = configService.getConfigById(id);
         model.addAttribute("copyright",copyright);
         return "update_copyright";
     }
 
-    @RequestMapping(path = "/copyright_Update",method = RequestMethod.POST)
+    @ShowLogger(info = "修改单个版权说明")
+    @ApiOperation(value = "修改单个版权说明",notes = "修改单个版权说明")
+    @RequestMapping(path = "/copyrightAdmin",method = RequestMethod.PUT)
     @ResponseBody
-    public boolean copyright_Update(Config config){
+    public boolean copyrightUpdate(Config config){
         config.setCtype("copyright");
         boolean flag = configService.configUpdate(config);
         redisUtil.delete("copyrights");
         return flag;
     }
 
-    @RequestMapping(path = "/copyright_Delete/{id}",method = RequestMethod.POST)
+    @ShowLogger(info = "删除单个版权说明")
+    @ApiOperation(value = "删除单个版权说明",notes = "删除单个版权说明")
+    @RequestMapping(path = "/copyrightAdmin/{id}",method = RequestMethod.DELETE)
     @ResponseBody
-    public boolean copyright_Update(@PathVariable("id") Integer id){
+    public boolean copyrightDelete(@PathVariable("id") Integer id){
         boolean flag = configService.configDelete(id);
         redisUtil.delete("copyrights");
         return flag;

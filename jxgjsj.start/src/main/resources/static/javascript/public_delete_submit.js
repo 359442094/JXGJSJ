@@ -68,14 +68,26 @@ layui.use(['element', 'layer'], function () {
       return false;
     }
     layer.confirm('确定要删除选中的数据吗?', { icon: 3, title: '提示' }, function (index) {
-      $.post(dw_url,{'ids':'['+chk_value+']'},function(obj) {
+      /*$.post(dw_url,{'ids':'['+chk_value+']'},function(obj) {
           if (obj == true) {
               layer.msg('删除成功');
               $(".dw-refresh").trigger('click');
           } else {
               layer.msg('删除失败');
           }
-      });
+      });*/
+        $.ajax({
+            url:dw_url+'?ids=['+chk_value+']',
+            method:"DELETE",
+            success: function(result) {
+                if (result == true) {
+                    layer.msg('删除成功');
+                    $(".dw-refresh").trigger('click');
+                } else {
+                    layer.msg('删除失败');
+                }
+            }
+        });
       layer.close(index);
     });
   });
@@ -93,14 +105,26 @@ layui.use(['element', 'layer'], function () {
       dw_title = '该数据';
     }
     layer.confirm('确定要删除[' + dw_title + ']吗?', { icon: 3, title: '提示' }, function (index) {
-      $.post(dw_url,{},function(obj) {
+      $.ajax({
+          url:dw_url,
+          method:"DELETE",
+          success: function(result) {
+              if (result == true) {
+                  layer.msg('删除成功');
+                  $(".dw-refresh").trigger('click');
+              } else {
+                  layer.msg('删除失败');
+              }
+          }
+      });
+      /*$.post(dw_url,{},function(obj) {
         if (obj == true) {
           layer.msg('删除成功');
           $(".dw-refresh").trigger('click');
         } else {
           layer.msg('删除失败');
         }
-      });
+      });*/
       layer.close(index);
     });
   });

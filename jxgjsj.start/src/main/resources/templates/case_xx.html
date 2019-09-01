@@ -10,7 +10,7 @@
 <!--top-->
 <div class="top" >
   <div class="w_box">
-    <div class="logo"><a href="/toIndex"><img style="width: 250px;height: 100px;" th:src="${logo.cvalue}" /></a></div>
+    <div class="logo"><a href="/index"><img style="width: 250px;height: 100px;" th:src="${logo.cvalue}" /></a></div>
     <ul class="tel">
       <li><b>免费客服电话</b></li>
       <div th:each="service:${services}">
@@ -25,9 +25,9 @@
         <div th:if="${menu.mid  != 1}">
           <li class="off"><a th:href="${menu.mpath}" th:text="${menu.mname}"></a></li>
         </div>
-        <!--  <li class="off"><a href="/toIndex">施工工艺</a></li>
-        <li class="off"><a href="/toIndex">装饰资讯</a></li>
-        <li class="off"><a href="/toIndex">关于我们</a></li>-->
+        <!--  <li class="off"><a href="/index">施工工艺</a></li>
+        <li class="off"><a href="/index">装饰资讯</a></li>
+        <li class="off"><a href="/index">关于我们</a></li>-->
       </ul>
     </div>
   </div>

@@ -117,7 +117,8 @@
     																	<p id="demoText"></p>
   																	</div>
   																	<button type="button" class="layui-btn" id="test1">选择图片</button>
-                                                <input type="hidden" name="uploadPath" th:value="'/user_upload_update_upath?id='+${user.uid}"/>
+                                                <input type="hidden" name="uploadPath" th:value="'/user/upload/icon?id='+${user.uid}"/>
+                                                <input type="hidden" name="method" value="PUT"/>
                                             </div>
                             </div>
                         	</div>

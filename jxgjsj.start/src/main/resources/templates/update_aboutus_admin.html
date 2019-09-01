@@ -12,11 +12,12 @@
             <fieldset class="layui-elem-field">
                 <legend>系统管理 - 关于我们</legend>
                 <div class="layui-field-box">
-                    <form class="layui-form" action="">
+                    <form class="layui-form" id="updateEmpFormNode" action="">
                         <div class="layui-form-item">
                             <label class="layui-form-label">图标</label>
                             <div class="layui-input-block">
-                                            <input type="hidden" name="uploadPath" value="/updateAboutusAdmin_UpdateLogo"/>
+                                            <input type="hidden" name="uploadPath" value="/aboutusAdmin/upload/logo"/>
+                                <input type="hidden" name="method" value="PUT"/>
                         					<div class="layui-upload">
                         						<div class="layui-upload-list">
     												<img width="300" height="100"  th:src="${response.logo}"

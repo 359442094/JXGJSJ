@@ -1,9 +1,11 @@
 package cn.blooming.jxgjsj.controller;
 
 import cn.blooming.jxgjsj.api.redis.RedisUtil;
+import cn.blooming.jxgjsj.model.annotation.ShowLogger;
 import cn.blooming.jxgjsj.model.entity.Config;
 import cn.blooming.jxgjsj.service.ConfigService;
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -24,27 +26,34 @@ public class ServiceController {
     @Autowired
     private ConfigService configService;
 
-    @RequestMapping(path = "/toService",method = RequestMethod.GET)
+    @ShowLogger(info = "跳转至客服后端页面")
+    @ApiOperation(value = "跳转至客服后端页面",notes = "跳转至客服后端页面")
+    @RequestMapping(path = "/serviceAdmin",method = RequestMethod.GET)
     public String getServices(Model model){
         List<Config> services = configService.getConfigs("service");
         model.addAttribute("services",services);
         return "service";
     }
 
-    @RequestMapping(path = "/toServiceInsert",method = RequestMethod.GET)
-    public String toServiceInsert(){
-        return "create_service";
-    }
-
-    @RequestMapping(path = "/toServiceUpdate/{id}",method = RequestMethod.GET)
-    public String service_Insert(Model model,@PathVariable("id") Integer id){
+    @ShowLogger(info = "查询单个客服")
+    @ApiOperation(value = "查询单个客服",notes = "查询单个客服")
+    @RequestMapping(path = "/serviceAdmin/{id}",method = RequestMethod.GET)
+    public String serviceById(Model model,@PathVariable("id") Integer id){
         Config config = configService.getConfigById(id);
         model.addAttribute("config",config);
         return "update_service";
     }
 
+    @ShowLogger(info = "跳转至客服添加页面")
+    @ApiOperation(value = "跳转至客服添加页面",notes = "跳转至客服添加页面")
+    @RequestMapping(path = "/serviceAdmin/info",method = RequestMethod.GET)
+    public String toServiceInsert(){
+        return "create_service";
+    }
 
-    @RequestMapping(path = "/service_Insert",method = RequestMethod.POST)
+    @ShowLogger(info = "添加单个客服")
+    @ApiOperation(value = "添加单个客服",notes = "添加单个客服")
+    @RequestMapping(path = "/serviceAdmin/info",method = RequestMethod.POST)
     @ResponseBody
     public boolean serviceInsert(Config config){
         if(!StringUtils.isEmpty(config)&&!StringUtils.isEmpty(config.getCvalue())){
@@ -56,9 +65,11 @@ public class ServiceController {
         return false;
     }
 
-    @RequestMapping(path = "/service_Update",method = RequestMethod.POST)
+    @ShowLogger(info = "修改单个客服")
+    @ApiOperation(value = "修改单个客服",notes = "修改单个客服")
+    @RequestMapping(path = "/serviceAdmin/info",method = RequestMethod.PUT)
     @ResponseBody
-    public boolean service_Update(Config config){
+    public boolean serviceUpdate(Config config){
         if(!StringUtils.isEmpty(config)&&!StringUtils.isEmpty(config.getCid())&&!StringUtils.isEmpty(config.getCtype())&&!StringUtils.isEmpty(config.getCvalue())){
             boolean configUpdate = configService.configUpdate(config);
             redisUtil.delete("services");
@@ -67,7 +78,9 @@ public class ServiceController {
         return false;
     }
 
-    @RequestMapping(path = "/service_Delete/{id}",method = RequestMethod.POST)
+    @ShowLogger(info = "删除单个客服")
+    @ApiOperation(value = "删除单个客服",notes = "删除单个客服")
+    @RequestMapping(path = "/serviceAdmin/{id}",method = RequestMethod.DELETE)
     @ResponseBody
     public boolean service_Delete(@PathVariable("id") Integer id){
         boolean configDelete = configService.configDelete(id);
@@ -75,7 +88,9 @@ public class ServiceController {
         return configDelete;
     }
 
-    @RequestMapping(path = "/service_Delete",method = RequestMethod.POST)
+    @ShowLogger(info = "删除多个客服")
+    @ApiOperation(value = "删除多个客服",notes = "删除多个客服")
+    @RequestMapping(path = "/serviceAdmin",method = RequestMethod.DELETE)
     @ResponseBody
     public boolean service_Delete(String [] ids){
         for (String id : ids) {

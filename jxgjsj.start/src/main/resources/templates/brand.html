@@ -34,20 +34,20 @@
                 <li class="layui-nav-item layui-nav-itemed">
                     <a class="" href="javascript:;">系统配置</a>
                     <dl class="layui-nav-child">
-                        <dd><a href="/toMenu">菜单配置</a></dd>
-                        <dd><a href="/toService">客服电话</a></dd>
-                        <dd><a href="/toBanner">轮播图片</a></dd>
-                        <dd><a href="/toQrCode">扫描图片</a></dd>
-                        <dd><a href="/toBrand">合作品牌</a></dd>
-                        <dd><a href="/toLogo">网站图标</a></dd>
-                        <dd><a href="/toCopyright">版权说明</a></dd>
-                        <dd><a href="/toAboutusAdmin">关于我们</a></dd>
+                        <dd><a href="/menuAdmin">菜单配置</a></dd>
+                        <dd><a href="/serviceAdmin">客服电话</a></dd>
+                        <dd><a href="/bannerAdmin">轮播图片</a></dd>
+                        <dd><a href="/qrCode">扫码图片</a></dd>
+                        <dd><a href="/brandAdmin">合作品牌</a></dd>
+                        <dd><a href="/logoAdmin">网站图标</a></dd>
+                        <dd><a href="/copyrightAdmin">版权说明</a></dd>
+                        <dd><a href="/aboutusAdmin">关于我们</a></dd>
                     </dl>
                 </li>
                 <li class="layui-nav-item layui-nav-itemed">
                     <a href="javascript:;">用户管理</a>
                     <dl class="layui-nav-child">
-                        <dd><a href="/toUserAdmin">用户列表</a></dd>
+                        <dd><a href="/user/userAdmin">用户列表</a></dd>
                     </dl>
                 </li>
                 <li class="layui-nav-item layui-nav-itemed">
@@ -77,12 +77,12 @@
               <hr>
               <div class="layui-btn-group">
                   <button class="layui-btn layui-btn-xs layui-btn-normal dw-dailog"
-                          dw-url="/toBrandInsert"
+                          dw-url="/brandAdmin/info"
                   	dw-title="新增合作品牌" dw-width="100%" dw-height="100%">
                       <i class="layui-icon">&#xe654;</i>新增
                   </button>
                   <button class="layui-btn layui-btn-xs layui-btn-danger dw-batch-delete"
-                          dw-url="/brand_upload_delete">
+                          dw-url="/brandAdmin/info">
                       <i class="layui-icon">&#xe640;</i>删除
                   </button>
                   <button class="layui-btn layui-btn-xs dw-refresh">
@@ -115,14 +115,13 @@
                       <td class="text-center">
                         <div class="layui-btn-group">
                           <button class="layui-btn layui-btn-xs layui-btn-normal dw-dailog" 
-                          	dw-url="/toBrandUpdate"
+                          	dw-url="/brandAdmin/info"
                                   onclick="$(this).attr('dw-url',$(this).attr('dw-url')+'/'+$(this).parent().parent().parent().find('.id').val());"
                                   dw-title="编辑图片">
                             <i class="layui-icon">&#xe642;</i>编辑
                           </button>
-                          <button class="layui-btn layui-btn-xs layui-btn-danger dw-delete"
-                                  dw-url="/brand_upload_delete"
-                                  onclick="$(this).attr('dw-url',$(this).attr('dw-url')+'/'+$(this).parent().parent().parent().find('.id').val());"
+                          <button class="layui-btn layui-btn-xs layui-btn-danger dw-delete" dw-url="/brandAdmin/info"
+  onclick="$(this).attr('dw-url',$(this).attr('dw-url')+'/'+$(this).parent().parent().parent().find('.id').val());"
                                   dw-title="该内容">
                             <i class="layui-icon">&#xe640;</i>删除
                           </button>

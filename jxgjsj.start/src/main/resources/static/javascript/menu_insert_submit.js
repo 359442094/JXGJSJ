@@ -6,7 +6,7 @@ layui.use(['element','form'], function(){
     var form = layui.form;
     //监听提交
     form.on('submit(formDemo)', function(){
-        var action ='/menu_Insert';//表单提交URL地址
+        var action ='/menuAdmin/info';//表单提交URL地址
         var mname = $("input[name='mname']").val(); //表单数据
         var mpath = $("input[name='mpath']").val(); //表单数据
         $.post(action,{'mname':mname,'mpath':mpath},function(obj){
@@ -15,7 +15,7 @@ layui.use(['element','form'], function(){
                     icon: 1,//提示的样式
                     time: 3000, //2秒关闭（如果不配置，默认是3秒）//设置后不需要自己写定时关闭了，单位是毫秒
                     end:function(){
-                        location.href='/toMenu';
+                        location.href='/menuAdmin';
                     }
                 });
             }else{
@@ -23,7 +23,7 @@ layui.use(['element','form'], function(){
                     icon: 2,//提示的样式
                     time: 3000, //2秒关闭（如果不配置，默认是3秒）//设置后不需要自己写定时关闭了，单位是毫秒
                     end:function(){
-                        location.href='/toMenu';
+                        location.href='/menuAdmin';
                     }
                 });
             }
