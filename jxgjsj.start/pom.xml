@@ -15,7 +15,6 @@
     <artifactId>jxgjsj.start</artifactId>
 
     <dependencies>
-
         <dependency>
             <groupId>cn.blooming.jxgjsj</groupId>
             <artifactId>jxgjsj.controller</artifactId>
