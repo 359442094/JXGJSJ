@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.blooming.jxgjsj.model.mapper.exte.DetailsMapper">
+
+    <select id="caseDetailAll" resultType="cn.blooming.jxgjsj.model.entity.DecorationStypeDetails">
+        SELECT details.* FROM `decoration_stype_details` details INNER JOIN `decoration_stype` stype ON stype.`sid`=details.`sid`
+        INNER JOIN `house` ON house.`sid`=details.`sid` INNER JOIN `house_type` ON house_type.`id`=house.`type`
+        <trim prefix="where" prefixOverrides="and | or">
+            <if test="style != null and style != ''">
+                stype.sname = #{style}
+            </if>
+            <if test="type != null and type != ''">
+                house_type.`type` = #{type}
+            </if>
+            <if test="startSize != 0 and endSize != 0">
+                house.`size` &gt; #{startSize} AND house.`size` &lt; #{endSize}
+            </if>
+            <if test="startSize != 0 and endSize == 0">
+                house.`size` &lt;= #{startSize}
+            </if>
+            <if test="startSize == 0 and endSize != 0">
+                house.`size` &gt;= #{endSize}
+            </if>
+        </trim>
+
+    </select>
+
+</mapper>

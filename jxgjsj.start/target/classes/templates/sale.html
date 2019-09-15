@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>热装楼盘列表页</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/></meta>
+    <link type="text/css" media="all" rel="stylesheet" href="static/css/css.css"></link>
+    <script src="static/js/tb1.js" type="text/javascript"></script>
+    <!--导航js-->
+  </head>
+<body><!--top-->
+<div class="top" >
+  <div class="w_box">
+    <div class="logo"><a href="/index"><img style="width: 250px;height: 100px;" th:src="${logo.cvalue}" /></a></div>
+    <ul class="tel">
+      <li><b>免费客服电话</b></li>
+      <div th:each="service:${services}">
+        <li style="color: blue;" th:text="${service.cvalue}"></li>
+      </div>
+    </ul>
+    <div class="mu">
+      <ul th:each="menu:${menus}">
+        <div th:if="${menu.mid  == 1}">
+          <li class="on"><a th:href="${menu.mpath}" th:text="${menu.mname}"></a></li>
+        </div>
+        <div th:if="${menu.mid  != 1}">
+          <li class="off"><a th:href="${menu.mpath}" th:text="${menu.mname}"></a></li>
+        </div>
+        <!--  <li class="off"><a href="/index">施工工艺</a></li>
+        <li class="off"><a href="/index">装饰资讯</a></li>
+        <li class="off"><a href="/index">关于我们</a></li>-->
+      </ul>
+    </div>
+  </div>
+</div>
+<!--con-->
+<div class="con">
+  <div class="w_box">
+    <div class="hang"><a href="#">首页</a> > <a href="#">热装楼盘</a></div>
+    <div class="xbanner">
+      <p><span class="sty1">找自家小区工地，看真实装修案例</span><br>
+        成都有<span class="sty2">428</span>套在建</p>
+    </div>
+    <div class="case">
+      <ul>
+        <li>
+          <div class="mic_op"><img src="static/images/3_r6_c3.jpg" /></div>
+          <div class="iuop"> <span class="sty3">【龙城国际】</span><br>
+            在建套数：<span class="sty2">36套</span><br>
+            已预约套数：<span class="sty2">142套</span><br>
+            <img src="static/images/3_r9_c10.jpg" />郫县 老成灌路红光广场对面<br>
+            <div class="kial"><a href="sale_xx.html">查看小区案例</a></div>
+            <div class="kial"  style="margin-left:30px; display:inline;"><a href="sale_xx.html">预约参观工地</a></div>
+          </div>
+        </li>
+        <li>
+          <div class="mic_op"><img src="static/images/3_r6_c3.jpg" /></div>
+          <div class="iuop"> <span class="sty3">【龙城国际】</span><br>
+            在建套数：<span class="sty2">36套</span><br>
+            已预约套数：<span class="sty2">142套</span><br>
+            <img src="static/images/3_r9_c10.jpg" />郫县 老成灌路红光广场对面<br>
+            <div class="kial"><a href="sale_xx.html">查看小区案例</a></div>
+            <div class="kial"  style="margin-left:30px; display:inline;"><a href="sale_xx.html">预约参观工地</a></div>
+          </div>
+        </li>
+        <li>
+          <div class="mic_op"><img src="static/images/3_r6_c3.jpg" /></div>
+          <div class="iuop"> <span class="sty3">【龙城国际】</span><br>
+            在建套数：<span class="sty2">36套</span><br>
+            已预约套数：<span class="sty2">142套</span><br>
+            <img src="static/images/3_r9_c10.jpg" />郫县 老成灌路红光广场对面<br>
+            <div class="kial"><a href="sale_xx.html">查看小区案例</a></div>
+            <div class="kial"  style="margin-left:30px; display:inline;"><a href="sale_xx.html">预约参观工地</a></div>
+          </div>
+        </li>
+        <li>
+          <div class="mic_op"><img src="static/images/3_r6_c3.jpg" /></div>
+          <div class="iuop"> <span class="sty3">【龙城国际】</span><br>
+            在建套数：<span class="sty2">36套</span><br>
+            已预约套数：<span class="sty2">142套</span><br>
+            <img src="static/images/3_r9_c10.jpg" />郫县 老成灌路红光广场对面<br>
+            <div class="kial"><a href="sale_xx.html">查看小区案例</a></div>
+            <div class="kial"  style="margin-left:30px; display:inline;"><a href="sale_xx.html">预约参观工地</a></div>
+          </div>
+        </li>
+        <li>
+          <div class="mic_op"><img src="static/images/3_r6_c3.jpg" /></div>
+          <div class="iuop"> <span class="sty3">【龙城国际】</span><br>
+            在建套数：<span class="sty2">36套</span><br>
+            已预约套数：<span class="sty2">142套</span><br>
+            <img src="static/images/3_r9_c10.jpg" />郫县 老成灌路红光广场对面<br>
+            <div class="kial"><a href="sale_xx.html">查看小区案例</a></div>
+            <div class="kial"  style="margin-left:30px; display:inline;"><a href="sale_xx.html">预约参观工地</a></div>
+          </div>
+        </li>
+        <li>
+          <div class="mic_op"><img src="static/images/3_r6_c3.jpg" /></div>
+          <div class="iuop"> <span class="sty3">【龙城国际】</span><br>
+            在建套数：<span class="sty2">36套</span><br>
+            已预约套数：<span class="sty2">142套</span><br>
+            <img src="static/images/3_r9_c10.jpg" />郫县 老成灌路红光广场对面<br>
+            <div class="kial"><a href="sale_xx.html">查看小区案例</a></div>
+            <div class="kial"  style="margin-left:30px; display:inline;"><a href="sale_xx.html">预约参观工地</a></div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!--<div class="fanye">
+      <div class="juz3"> <span class="ff_1"><a href="#">上一页</a></span><span class="ff_2"><a href="#">1</a></span><span class="ff_2"><a href="#">2</a></span><span class="ff_2"><a href="#">3</a></span><span class="ff_2"><a href="#">4</a></span> <span class="ff_2"><a href="#">5</a></span> <span class="ff_2"><a href="#">...</a></span> <span class="ff_2"><a href="#">60</a></span><span></span><span class="ff_1" style="margin-left:5px; display:inline;"><a href="#">下一页</a> </span></div>
+    </div>-->
+  </div>
+</div>
+<!--foot-->
+<div class="foot">
+  <div class="w_box" >
+    <div class="hhh" style="margin-top: 60px;">
+      <div class="f_q">
+        <div class="xdh"> <span>关于我们</span><br/>
+
+          <a href="#">公司荣誉</a><br/>
+          <a href="#">发展历程</a><br/>
+          <a href="#">企业文化</a><br/>
+          <a href="#">联系我们</a> </div>
+      </div>
+      <div class="f_q">
+        <div class="xdh"> <span>装饰资讯</span><br/>
+          <a href="#">公司新闻</a><br/>
+          <a href="#">行业动态</a><br/>
+          <a href="#">装修知识</a> </div>
+      </div>
+      <div class="f_q">
+        <div class="xdh"> <span>风格案例</span><br/>
+          <a href="#">欧式</a><br/>
+          <a href="#">简约</a><br/>
+          <a href="#">田园</a><br/>
+          <a href="#">地中海</a><br/>
+          <a href="#">中式</a> </div>
+      </div>
+      <div class="f_ri">
+        <div class="xdh2"> <span class="a_1">联系方式</span><br/>
+          <span th:each="service,sStatus:${services}">
+              <span class="a_2" th:text="${service.cvalue}"></span>
+          </span>
+
+          <span class="a_3">免费客户服务热线</span> </div>
+        <div class="weix" th:each="wechat_qrcode:${wechat_qrcodes}">
+          <img style="width: 300px;height: 180px;" th:src="${wechat_qrcode.cvalue}" />
+          <div style="width: 300px;">匠心国际设计官方微信</div>
+        </div>
+      </div>
+    </div>
+    <div th:each="copyright:${copyrights}">
+      <div class="banquan" style="color: #000000;" th:text="${copyright.cvalue}"></div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
