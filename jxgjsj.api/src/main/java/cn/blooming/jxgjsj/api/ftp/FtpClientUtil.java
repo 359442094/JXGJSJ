@@ -3,7 +3,9 @@ package cn.blooming.jxgjsj.api.ftp;
 import lombok.extern.log4j.Log4j;
 import org.apache.commons.lang.StringUtils;
 import org.apache.commons.net.ftp.FTPClient;
+import org.apache.commons.net.ftp.FTPClientConfig;
 import org.apache.commons.net.ftp.FTPReply;
+import org.apache.commons.net.ftp.FTPSClient;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 import java.io.*;
@@ -33,19 +35,26 @@ public class FtpClientUtil {
     /**
      * Description: 向FTP服务器上传文件
      * @Version1.0
-     * @param url FTP服务器hostname
-     * @param port FTP服务器端口
-     * @param username FTP登录账号
-     * @param password FTP登录密码
-     * @param path FTP服务器保存目录
-     * @param filename 上传到FTP服务器上的文件名
-     * @param input 输入流
+     * @param FTP服务器hostname
+     * @param FTP服务器端口
+     * @param FTP登录账号
+     * @param FTP登录密码
+     * @param FTP服务器保存目录
+     * @param 上传到FTP服务器上的文件名
+     * @param 输入流
      * @return 成功返回true，否则返回false
      */
     public boolean uploadFile(FtpClient ftpClient) {
         boolean success = false;
+        //FTPSClient ftp = new FTPSClient("SSL",true);
         FTPClient ftp = new FTPClient();
+        ftp.enterLocalPassiveMode();        //这个设置允许被动连接--访问远程ftp时需要
+        FTPClientConfig config = new FTPClientConfig();
+        config.setLenientFutureDates(true);
+        ftp.configure(config);
         try {
+            ftp.setDataTimeout(60000);       //设置传输超时时间为60秒
+            ftp.setConnectTimeout(60000);       //连接超时为60秒
             int reply;
             //ftp.connect(url, port);//连接FTP服务器
             ftp.connect(ftpClient.getUrl());
