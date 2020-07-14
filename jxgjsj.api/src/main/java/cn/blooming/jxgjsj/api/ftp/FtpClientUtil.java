@@ -14,8 +14,6 @@ import java.io.*;
  * JAVA FTPClient 工具类
  *
  * commons-net-1.4.1.jar PFTClinet jar包
- *
- * @author : hpp
  */
 @Log4j
 @Component

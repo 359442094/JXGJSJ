@@ -34,6 +34,4 @@ public class UserAdminControoler {
     @Autowired
     private UserService userService;
 
-
-
 }

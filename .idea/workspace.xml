@@ -2,12 +2,51 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02301aee-5a5a-4139-81fd-e146a27298e3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jxgjsj.api/src/main/java/cn/blooming/jxgjsj/api/ftp/FtpClientUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/jxgjsj.api/src/main/java/cn/blooming/jxgjsj/api/ftp/FtpClientUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jxgjsj.start/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/jxgjsj.start/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jxgjsj.api/target/classes/cn/blooming/jxgjsj/api/ftp/FtpClientUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/jxgjsj.api/target/classes/cn/blooming/jxgjsj/api/ftp/FtpClientUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jxgjsj.api/target/jxgjsj.api-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/jxgjsj.api/target/jxgjsj.api-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jxgjsj.api/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/jxgjsj.api/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jxgjsj.api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/jxgjsj.api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jxgjsj.api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/jxgjsj.api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jxgjsj.common/target/jxgjsj.common-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/jxgjsj.common/target/jxgjsj.common-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jxgjsj.common/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/jxgjsj.common/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jxgjsj.common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/jxgjsj.common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jxgjsj.controller/src/main/java/cn/blooming/jxgjsj/controller/UserAdminControoler.java" beforeDir="false" afterPath="$PROJECT_DIR$/jxgjsj.controller/src/main/java/cn/blooming/jxgjsj/controller/UserAdminControoler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jxgjsj.controller/target/jxgjsj.controller-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/jxgjsj.controller/target/jxgjsj.controller-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jxgjsj.controller/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/jxgjsj.controller/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jxgjsj.controller/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/jxgjsj.controller/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jxgjsj.controller/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/jxgjsj.controller/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jxgjsj.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jxgjsj.model/target/jxgjsj.model-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/jxgjsj.model/target/jxgjsj.model-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jxgjsj.model/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/jxgjsj.model/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jxgjsj.model/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/jxgjsj.model/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jxgjsj.model/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/jxgjsj.model/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jxgjsj.service/target/jxgjsj.service-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/jxgjsj.service/target/jxgjsj.service-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jxgjsj.service/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/jxgjsj.service/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jxgjsj.service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/jxgjsj.service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jxgjsj.service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/jxgjsj.service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jxgjsj.start/src/main/java/cn/blooming/jxgjsj/start/test/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jxgjsj.start/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/jxgjsj.start/src/main/resources/application-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jxgjsj.start/src/main/resources/bootstrap-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/jxgjsj.start/src/main/resources/bootstrap-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jxgjsj.start/src/main/resources/bootstrap-sit.properties" beforeDir="false" afterPath="$PROJECT_DIR$/jxgjsj.start/src/main/resources/bootstrap-sit.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jxgjsj.start/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/jxgjsj.start/src/main/resources/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jxgjsj.start/target/classes/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/jxgjsj.start/target/classes/application-dev.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jxgjsj.start/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/jxgjsj.start/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jxgjsj.start/target/classes/bootstrap-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/jxgjsj.start/target/classes/bootstrap-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jxgjsj.start/target/classes/bootstrap-sit.properties" beforeDir="false" afterPath="$PROJECT_DIR$/jxgjsj.start/target/classes/bootstrap-sit.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jxgjsj.start/target/classes/cn/blooming/jxgjsj/start/test/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jxgjsj.start/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/jxgjsj.start/target/classes/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jxgjsj.start/target/jxgjsj.start.jar" beforeDir="false" afterPath="$PROJECT_DIR$/jxgjsj.start/target/jxgjsj.start.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jxgjsj.start/target/jxgjsj.start.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/jxgjsj.start/target/jxgjsj.start.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jxgjsj.start/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/jxgjsj.start/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jxgjsj.start/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/jxgjsj.start/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jxgjsj.start/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/jxgjsj.start/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/blooming/jxgjsj/model/entity/Community.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/blooming/jxgjsj/model/entity/Community.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/blooming/jxgjsj/model/entity/CommunityExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/blooming/jxgjsj/model/entity/CommunityExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/blooming/jxgjsj/model/mapper/CommunityMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/blooming/jxgjsj/model/mapper/CommunityMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/CommunityMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/CommunityMapper.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -90,51 +129,90 @@
           <entry key="project.open.time.44" value="1" />
           <entry key="project.open.time.50" value="1" />
           <entry key="project.open.time.51" value="1" />
+          <entry key="project.open.time.70" value="1" />
           <entry key="project.open.time.72" value="1" />
           <entry key="project.open.time.86" value="1" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.opened" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="1" />
-          <entry key="html" value="145" />
+          <entry key="html" value="150" />
           <entry key="iml" value="1" />
-          <entry key="java" value="77" />
+          <entry key="java" value="89" />
           <entry key="js" value="51" />
-          <entry key="properties" value="38" />
-          <entry key="xml" value="22" />
+          <entry key="properties" value="55" />
+          <entry key="xml" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="HTML" value="145" />
+          <entry key="HTML" value="150" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="77" />
+          <entry key="JAVA" value="89" />
           <entry key="JavaScript" value="51" />
-          <entry key="Properties" value="38" />
-          <entry key="XML" value="22" />
+          <entry key="Properties" value="55" />
+          <entry key="XML" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="309" />
-          <entry key="java" value="1311" />
+          <entry key="html" value="348" />
+          <entry key="java" value="1313" />
           <entry key="js" value="492" />
-          <entry key="properties" value="22" />
+          <entry key="properties" value="34" />
           <entry key="txt" value="4" />
-          <entry key="xml" value="19" />
+          <entry key="xml" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="309" />
-          <entry key="JAVA" value="1311" />
+          <entry key="HTML" value="348" />
+          <entry key="JAVA" value="1313" />
           <entry key="JavaScript" value="492" />
           <entry key="PLAIN_TEXT" value="4" />
-          <entry key="Properties" value="22" />
-          <entry key="XML" value="19" />
+          <entry key="Properties" value="34" />
+          <entry key="XML" value="25" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="-1974859410">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="html" value="2" />
+          <entry key="java" value="33" />
+          <entry key="properties" value="13" />
+          <entry key="xml" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="HTML" value="2" />
+          <entry key="JAVA" value="33" />
+          <entry key="Properties" value="13" />
+          <entry key="XML" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="2" />
+          <entry key="properties" value="5" />
+          <entry key="xml" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="2" />
+          <entry key="Properties" value="5" />
+          <entry key="XML" value="1" />
         </counts>
       </usages-collector>
     </session>
@@ -143,68 +221,7 @@
     <favorites_list name="jxgjsj" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jxgjsj.controller/src/main/java/cn/blooming/jxgjsj/controller/BannerController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="72" column="75" lean-forward="true" selection-start-line="72" selection-start-column="75" selection-end-line="72" selection-end-column="75" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jxgjsj.start/src/main/resources/templates/create_banner.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-171">
-              <caret line="16" column="76" lean-forward="true" selection-start-line="16" selection-start-column="76" selection-end-line="16" selection-end-column="76" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/jxgjsj.api/src/main/java/cn/blooming/jxgjsj/api/ftp/FtpClientUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="48" column="10" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jxgjsj.start/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jxgjsj.start/src/main/resources/static/javascript/upload.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="9" column="27" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-              <folding>
-                <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jxgjsj.start/src/main/resources/templates/banner.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="81" column="39" lean-forward="true" selection-start-line="81" selection-start-column="39" selection-end-line="81" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -216,10 +233,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>/user/newLogin</find>
-      <find>/user</find>
-      <find>toUserAdmin</find>
-      <find>toUserAdminUpdate</find>
       <find>user_upload_update_upath</find>
       <find>user_upload_update_bpath</find>
       <find>user_insert</find>
@@ -246,6 +259,10 @@
       <find>/bannerAdmin/upload/banner</find>
       <find>banner_upload_update</find>
       <find>banner_delete</find>
+      <find>mysql</find>
+      <find>yq</find>
+      <find>ak</find>
+      <find>toConstruction</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -264,12 +281,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/jxgjsj.controller/src/main/java/cn/blooming/jxgjsj/controller/IndexController.java" />
-        <option value="$PROJECT_DIR$/jxgjsj.controller/src/main/java/cn/blooming/jxgjsj/controller/AboutusAdminController.java" />
-        <option value="$PROJECT_DIR$/jxgjsj.start/src/main/resources/static/javascript/upload.js" />
         <option value="$PROJECT_DIR$/jxgjsj.controller/src/main/java/cn/blooming/jxgjsj/controller/QrCodeController.java" />
         <option value="$PROJECT_DIR$/jxgjsj.start/src/main/resources/templates/update_qrcode.html" />
-        <option value="$PROJECT_DIR$/jxgjsj.controller/src/main/java/cn/blooming/jxgjsj/controller/AboutUsController.java" />
         <option value="$PROJECT_DIR$/jxgjsj.start/src/main/resources/templates/update_brand.html" />
         <option value="$PROJECT_DIR$/jxgjsj.controller/src/main/java/cn/blooming/jxgjsj/controller/BrandController.java" />
         <option value="$PROJECT_DIR$/jxgjsj.start/src/main/resources/templates/create_brand.html" />
@@ -281,7 +294,6 @@
         <option value="$PROJECT_DIR$/jxgjsj.start/src/main/resources/static/javascript/aboutus_update_submit.js" />
         <option value="$PROJECT_DIR$/jxgjsj.controller/src/main/java/cn/blooming/jxgjsj/controller/CopyrightController.java" />
         <option value="$PROJECT_DIR$/jxgjsj.start/src/main/resources/static/javascript/copyright_update_submit.js" />
-        <option value="$PROJECT_DIR$/jxgjsj.controller/src/main/java/cn/blooming/jxgjsj/controller/UserAdminControoler.java" />
         <option value="$PROJECT_DIR$/jxgjsj.start/src/main/resources/static/javascript/service_update_submit.js" />
         <option value="$PROJECT_DIR$/jxgjsj.start/src/main/resources/templates/update_user.html" />
         <option value="$PROJECT_DIR$/jxgjsj.start/src/main/resources/static/javascript/user_insert_submit.js" />
@@ -306,15 +318,20 @@
         <option value="$PROJECT_DIR$/jxgjsj.start/src/main/resources/templates/create_banner.html" />
         <option value="$PROJECT_DIR$/jxgjsj.start/src/main/resources/templates/update_banner.html" />
         <option value="$PROJECT_DIR$/jxgjsj.start/src/main/resources/templates/banner.html" />
-        <option value="$PROJECT_DIR$/jxgjsj.start/pom.xml" />
-        <option value="$PROJECT_DIR$/jxgjsj.start/src/main/resources/bootstrap-sit.properties" />
         <option value="$PROJECT_DIR$/jxgjsj.start/src/main/resources/application-sit.properties" />
+        <option value="$PROJECT_DIR$/jxgjsj.controller/src/main/java/cn/blooming/jxgjsj/controller/BannerController.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/jxgjsj.start/src/main/resources/bootstrap-dev.properties" />
+        <option value="$PROJECT_DIR$/jxgjsj.start/src/main/resources/bootstrap-sit.properties" />
         <option value="$PROJECT_DIR$/jxgjsj.start/src/main/resources/bootstrap.properties" />
         <option value="$PROJECT_DIR$/jxgjsj.start/src/main/resources/application-dev.properties" />
-        <option value="$PROJECT_DIR$/jxgjsj.start/src/main/resources/bootstrap-dev.properties" />
-        <option value="$PROJECT_DIR$/jxgjsj.start/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/jxgjsj.controller/src/main/java/cn/blooming/jxgjsj/controller/BannerController.java" />
+        <option value="$PROJECT_DIR$/jxgjsj.start/src/main/java/cn/blooming/jxgjsj/start/interceptor/WebRersoucesConfig.java" />
+        <option value="$PROJECT_DIR$/jxgjsj.start/src/main/resources/templates/index.html" />
         <option value="$PROJECT_DIR$/jxgjsj.api/src/main/java/cn/blooming/jxgjsj/api/ftp/FtpClientUtil.java" />
+        <option value="$PROJECT_DIR$/jxgjsj.controller/src/main/java/cn/blooming/jxgjsj/controller/AboutUsController.java" />
+        <option value="$PROJECT_DIR$/jxgjsj.controller/src/main/java/cn/blooming/jxgjsj/controller/UserAdminControoler.java" />
+        <option value="$PROJECT_DIR$/jxgjsj.start/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/jxgjsj.start/pom.xml" />
       </list>
     </option>
   </component>
@@ -328,7 +345,6 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
-        <option name="userSettingsFile" value="D:\Maven\apache-maven-3.5.3\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -347,15 +363,6 @@
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="jxgjsj" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="jxgjsj.start" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="jxgjsj.start" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
       </expand>
@@ -380,6 +387,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -387,177 +397,10 @@
               <item name="jxgjsj" type="b2602c69:ProjectViewProjectNode" />
               <item name="jxgjsj" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="jxgjsj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jxgjsj" type="462c0819:PsiDirectoryNode" />
-              <item name="jxgjsj.api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jxgjsj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jxgjsj" type="462c0819:PsiDirectoryNode" />
-              <item name="jxgjsj.api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jxgjsj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jxgjsj" type="462c0819:PsiDirectoryNode" />
-              <item name="jxgjsj.api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jxgjsj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jxgjsj" type="462c0819:PsiDirectoryNode" />
-              <item name="jxgjsj.api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jxgjsj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jxgjsj" type="462c0819:PsiDirectoryNode" />
-              <item name="jxgjsj.api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jxgjsj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jxgjsj" type="462c0819:PsiDirectoryNode" />
-              <item name="jxgjsj.api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="ftp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jxgjsj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jxgjsj" type="462c0819:PsiDirectoryNode" />
-              <item name="jxgjsj.controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jxgjsj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jxgjsj" type="462c0819:PsiDirectoryNode" />
-              <item name="jxgjsj.controller" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jxgjsj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jxgjsj" type="462c0819:PsiDirectoryNode" />
-              <item name="jxgjsj.controller" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jxgjsj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jxgjsj" type="462c0819:PsiDirectoryNode" />
-              <item name="jxgjsj.controller" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jxgjsj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jxgjsj" type="462c0819:PsiDirectoryNode" />
-              <item name="jxgjsj.controller" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jxgjsj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jxgjsj" type="462c0819:PsiDirectoryNode" />
-              <item name="jxgjsj.start" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jxgjsj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jxgjsj" type="462c0819:PsiDirectoryNode" />
-              <item name="jxgjsj.start" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jxgjsj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jxgjsj" type="462c0819:PsiDirectoryNode" />
-              <item name="jxgjsj.start" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jxgjsj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jxgjsj" type="462c0819:PsiDirectoryNode" />
-              <item name="jxgjsj.start" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jxgjsj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jxgjsj" type="462c0819:PsiDirectoryNode" />
-              <item name="jxgjsj.start" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="start" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jxgjsj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jxgjsj" type="462c0819:PsiDirectoryNode" />
-              <item name="jxgjsj.start" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jxgjsj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jxgjsj" type="462c0819:PsiDirectoryNode" />
-              <item name="jxgjsj.start" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jxgjsj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jxgjsj" type="462c0819:PsiDirectoryNode" />
-              <item name="jxgjsj.start" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="javascript" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jxgjsj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jxgjsj" type="462c0819:PsiDirectoryNode" />
-              <item name="jxgjsj.start" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jxgjsj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jxgjsj" type="462c0819:PsiDirectoryNode" />
-              <item name="jxgjsj.start" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jxgjsj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jxgjsj" type="462c0819:PsiDirectoryNode" />
-              <item name="jxgjsj.start" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -575,7 +418,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569598439301" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1594713444539" />
     <property name="ignore_missing_gitignore" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -843,6 +686,8 @@
       <workItem from="1568551467208" duration="876000" />
       <workItem from="1568553719496" duration="1000" />
       <workItem from="1569596120548" duration="2304000" />
+      <workItem from="1570278416363" duration="3887000" />
+      <workItem from="1594711220064" duration="2017000" />
     </task>
     <task id="LOCAL-00001" summary="jsgjsj 名称待优化">
       <created>1565668695433</created>
@@ -897,7 +742,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83984000" />
+    <option name="totallyTimeSpent" value="89888000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -909,10 +754,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <layout>
-      <window_info content_ui="combo" x="605" y="59" width="325" height="706" id="Project" order="0" side_tool="true" visible="true" weight="0.27680966" />
+      <window_info content_ui="combo" x="605" y="59" width="325" height="706" id="Project" order="0" side_tool="true" visible="true" weight="0.28411514" />
       <window_info x="581" y="59" width="373" height="706" id="Structure" order="1" show_stripe_button="false" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -922,7 +766,7 @@
       <window_info id="Favorites" order="7" show_stripe_button="false" weight="0.32841823" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.0" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27982646" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -933,14 +777,15 @@
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3286119" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32936078" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="13" weight="0.5424929" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.5141643" />
       <window_info anchor="bottom" id="Application Servers" order="14" weight="0.3286119" />
+      <window_info anchor="right" id="Word Book" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Maven Projects" order="5" visible="true" weight="0.1735925" />
+      <window_info anchor="right" id="Maven Projects" order="5" visible="true" weight="0.17324094" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
@@ -1029,360 +874,357 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/jxgjsj.start/src/main/resources/templates/create_user.html">
+    <entry file="file://$PROJECT_DIR$/jxgjsj.start/src/main/java/cn/blooming/jxgjsj/start/aop/ArgsAop.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="151" column="59" selection-start-line="151" selection-start-column="59" selection-end-line="151" selection-end-column="59" />
+        <state relative-caret-position="588">
+          <caret line="27" column="38" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jxgjsj.start/src/main/resources/static/javascript/user_insert_submit.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jxgjsj.start/src/main/resources/static/javascript/user_update_submit.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-374">
-          <caret line="75" column="30" selection-start-line="75" selection-start-column="30" selection-end-line="75" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jxgjsj.start/src/main/resources/static/javascript/public_delete_submit.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="79" column="25" selection-start-line="79" selection-start-column="25" selection-end-line="79" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jxgjsj.start/src/main/resources/templates/update_logo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-480">
-          <caret line="16" column="73" selection-start-line="16" selection-start-column="73" selection-end-line="16" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jxgjsj.controller/src/main/java/cn/blooming/jxgjsj/controller/LogoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="63" column="3" selection-start-line="63" selection-start-column="3" selection-end-line="64" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jxgjsj.start/src/main/resources/static/javascript/service_update_submit.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="34" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jxgjsj.start/src/main/resources/static/javascript/menu_update_submit.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jxgjsj.start/src/main/resources/templates/update_menu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="49" column="63" selection-start-line="49" selection-start-column="63" selection-end-line="49" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jxgjsj.controller/src/main/java/cn/blooming/jxgjsj/controller/MenuController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="88" column="23" selection-start-line="88" selection-start-column="23" selection-end-line="88" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jxgjsj.start/src/main/resources/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="39" column="36" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jxgjsj.start/src/main/resources/templates/brand.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="39" column="48" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jxgjsj.controller/src/main/java/cn/blooming/jxgjsj/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-13">
-          <caret line="233" column="69" selection-start-line="233" selection-start-column="69" selection-end-line="233" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jxgjsj.controller/src/main/java/cn/blooming/jxgjsj/controller/UserAdminControoler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jxgjsj.start/src/main/resources/templates/logo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="39" column="48" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jxgjsj.start/src/main/resources/templates/qrcode.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="39" column="48" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/jxgjsj.start/src/main/java/cn/blooming/jxgjsj/start/test/Test.java" />
     <entry file="file://$PROJECT_DIR$/jxgjsj.start/src/main/resources/templates/copyright.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="39" column="48" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
+        <state relative-caret-position="308">
+          <caret line="43" column="50" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jxgjsj.start/src/main/resources/templates/aboutus_admin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="39" column="48" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
+        <state relative-caret-position="56">
+          <caret line="43" column="50" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="50" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jxgjsj.start/src/main/resources/templates/menu.html">
+    <entry file="file://$PROJECT_DIR$/jxgjsj.start/src/main/resources/templates/about_us.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="39" column="48" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jxgjsj.start/src/main/resources/templates/users.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="39" column="48" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jxgjsj.start/src/main/resources/templates/service.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="39" column="48" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.8.RELEASE/spring-web-4.3.8.RELEASE.jar!/org/springframework/web/bind/annotation/RequestMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jxgjsj.start/src/main/resources/templates/update_banner.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="16" column="73" selection-start-line="16" selection-start-column="73" selection-end-line="16" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jxgjsj.controller/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jxgjsj.api/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jxgjsj.service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="19" column="34" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jxgjsj.common/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1">
-          <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jxgjsj.start/src/main/resources/application-dev.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jxgjsj.start/src/main/resources/bootstrap-dev.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jxgjsj.start/src/main/resources/bootstrap.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="25" selection-start-column="25" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jxgjsj.model/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="26" column="83" selection-start-line="26" selection-start-column="68" selection-end-line="26" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jxgjsj.model/src/main/resources/generator/generatorConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="6" column="104" selection-start-line="6" selection-start-column="100" selection-end-line="6" selection-end-column="104" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jxgjsj.model/src/main/java/cn/blooming/jxgjsj/model/annotation/ShowLogger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jxgjsj.start/src/main/java/cn/blooming/jxgjsj/start/aop/ArgsAop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="27" column="38" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jxgjsj.start/src/main/java/cn/blooming/jxgjsj/start/aop/AnntationAop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="59" column="35" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jxgjsj.service/src/main/java/cn/blooming/jxgjsj/service/ConfigService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="10" column="24" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jxgjsj.start/src/main/java/cn/blooming/jxgjsj/start/interceptor/WebRersoucesConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-336">
-          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jxgjsj.start/src/main/java/cn/blooming/jxgjsj/start/Swagger2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="22" column="88" selection-start-line="22" selection-start-column="78" selection-end-line="22" selection-end-column="88" />
+        <state relative-caret-position="532">
+          <caret line="15" column="116" lean-forward="true" selection-start-line="15" selection-start-column="116" selection-end-line="15" selection-end-column="116" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jxgjsj.start/src/main/java/cn/blooming/jxgjsj/start/interceptor/ResourceInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
+        <state relative-caret-position="253">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jxgjsj.start/src/main/java/cn/blooming/jxgjsj/start/interceptor/WebRersoucesConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1148">
+          <caret line="24" column="74" lean-forward="true" selection-start-line="24" selection-start-column="74" selection-end-line="24" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jxgjsj.api/src/main/java/cn/blooming/jxgjsj/api/AboutUsAdminResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" column="33" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jxgjsj.api/src/main/java/cn/blooming/jxgjsj/api/CaseDetailImage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jxgjsj.api/src/main/java/cn/blooming/jxgjsj/api/CaseDetailRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jxgjsj.api/src/main/java/cn/blooming/jxgjsj/api/CaseResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jxgjsj.api/src/main/java/cn/blooming/jxgjsj/api/IndexData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jxgjsj.api/src/main/java/cn/blooming/jxgjsj/api/TestRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jxgjsj.start/pom.xml">
+    <entry file="file://$PROJECT_DIR$/jxgjsj.api/src/main/java/cn/blooming/jxgjsj/api/TestResponse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="727">
-          <caret line="66" column="42" selection-start-line="66" selection-start-column="33" selection-end-line="66" selection-end-column="42" />
+        <state relative-caret-position="297">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/jxgjsj.api/src/main/java/cn/blooming/jxgjsj/api/CaseDetailResponse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3247" />
+        <state relative-caret-position="297">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jxgjsj.api/src/main/java/cn/blooming/jxgjsj/api/ftp/FtpClientUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jxgjsj.api/src/main/java/cn/blooming/jxgjsj/api/ftp/FtpClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jxgjsj.api/src/main/java/cn/blooming/jxgjsj/api/redis/RedisUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jxgjsj.common/src/main/java/cn/blooming/jxgjsj/common/Constant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jxgjsj.common/src/main/java/cn/blooming/jxgjsj/common/Context.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="55" column="9" lean-forward="true" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jxgjsj.common/src/main/java/cn/blooming/jxgjsj/common/ServiceException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jxgjsj.start/src/main/resources/application-dev.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jxgjsj.start/src/main/resources/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jxgjsj.start/src/main/resources/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="22" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="22" />
+          <folding>
+            <element signature="n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jxgjsj.start/src/main/java/cn/blooming/jxgjsj/start/StartApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-          <folding>
-            <element signature="e#935#936#0" expanded="true" />
-            <element signature="e#993#994#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="518">
+          <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jxgjsj.start/src/main/resources/bootstrap-sit.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
+        <state relative-caret-position="108">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jxgjsj.start/src/main/resources/bootstrap-dev.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
           <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jxgjsj.start/src/main/resources/application-sit.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="12" column="16" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+        <state relative-caret-position="162">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jxgjsj.start/src/main/resources/static/javascript/menu_insert_submit.js">
+    <entry file="file://$PROJECT_DIR$/jxgjsj.controller/src/main/java/cn/blooming/jxgjsj/controller/AboutUsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="10" column="40" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jxgjsj.start/src/main/resources/templates/banner.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="81" column="39" lean-forward="true" selection-start-line="81" selection-start-column="39" selection-end-line="81" selection-end-column="39" />
+        <state relative-caret-position="324">
+          <caret line="48" column="36" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jxgjsj.controller/src/main/java/cn/blooming/jxgjsj/controller/BannerController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="72" column="75" lean-forward="true" selection-start-line="72" selection-start-column="75" selection-end-line="72" selection-end-column="75" />
+        <state relative-caret-position="-2573">
+          <caret line="25" column="21" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jxgjsj.start/src/main/resources/static/javascript/upload.js">
+    <entry file="file://$PROJECT_DIR$/jxgjsj.controller/src/main/java/cn/blooming/jxgjsj/controller/BrandController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="9" column="27" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="451">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jxgjsj.start/src/main/resources/templates/create_banner.html">
+    <entry file="file://$PROJECT_DIR$/jxgjsj.controller/src/main/java/cn/blooming/jxgjsj/controller/CaseController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-171">
-          <caret line="16" column="76" lean-forward="true" selection-start-line="16" selection-start-column="76" selection-end-line="16" selection-end-column="76" />
+        <state relative-caret-position="316">
+          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jxgjsj.controller/src/main/java/cn/blooming/jxgjsj/controller/CaseDetailsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jxgjsj.controller/src/main/java/cn/blooming/jxgjsj/controller/CopyrightController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jxgjsj.controller/src/main/java/cn/blooming/jxgjsj/controller/IndexController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jxgjsj.controller/src/main/java/cn/blooming/jxgjsj/controller/LogoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1061">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jxgjsj.controller/src/main/java/cn/blooming/jxgjsj/controller/MenuController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1952">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jxgjsj.controller/src/main/java/cn/blooming/jxgjsj/controller/QrCodeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1061">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jxgjsj.controller/src/main/java/cn/blooming/jxgjsj/controller/SaleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-89">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jxgjsj.controller/src/main/java/cn/blooming/jxgjsj/controller/ServiceController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-656">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jxgjsj.controller/src/main/java/cn/blooming/jxgjsj/controller/TeamController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jxgjsj.controller/src/main/java/cn/blooming/jxgjsj/controller/TeamDetailsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jxgjsj.controller/src/main/java/cn/blooming/jxgjsj/controller/TestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jxgjsj.controller/src/main/java/cn/blooming/jxgjsj/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2614">
+          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jxgjsj.controller/src/main/java/cn/blooming/jxgjsj/controller/UserAdminControoler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jxgjsj.start/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+          <caret column="14" selection-start-column="14" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jxgjsj.api/src/main/java/cn/blooming/jxgjsj/api/ftp/FtpClientUtil.java">
+    <entry file="file://$PROJECT_DIR$/jxgjsj.start/src/main/resources/bootstrap.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="48" column="10" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
+        <state>
+          <caret column="26" selection-start-column="26" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jxgjsj.controller/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jxgjsj.service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jxgjsj.start/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="531">
+          <caret line="58" column="31" lean-forward="true" selection-start-line="58" selection-start-column="31" selection-end-line="58" selection-end-column="31" />
         </state>
       </provider>
     </entry>

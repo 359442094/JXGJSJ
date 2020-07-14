@@ -523,8 +523,8 @@ function CompScr(){
       <div class="yq_mic"><img src="static/images/126_r4_c2.jpg" /></div>
       <div class="yq_sow">
         <ul>
-          <li th:each="brand:${brands}">
-            <a href="#"><img th:src="${brand.cvalue}" /></a>
+          <li style="height:180px;wigth:200px;margin: 0px 5px" th:each="brand:${brands}">
+            <a href="#" style="height:180px;wigth:200px"><img width="200px" height="180px" th:src="${brand.cvalue}" /></a>
           </li>
         </ul>
       </div>

@@ -15,6 +15,6 @@ cn\blooming\jxgjsj\service\ImageService.class
 cn\blooming\jxgjsj\service\HouseTypeService.class
 cn\blooming\jxgjsj\service\impl\UserServiceImpl.class
 cn\blooming\jxgjsj\service\CommunityService.class
-cn\blooming\jxgjsj\service\HouseService.class
 cn\blooming\jxgjsj\service\impl\MenuServiceImpl.class
+cn\blooming\jxgjsj\service\HouseService.class
 cn\blooming\jxgjsj\service\impl\HouseTypeServiceImpl.class

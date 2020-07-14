@@ -14,11 +14,11 @@ cn\blooming\jxgjsj\model\mapper\CommunityMapper.class
 cn\blooming\jxgjsj\model\entity\HouseExample$Criterion.class
 cn\blooming\jxgjsj\model\entity\HouseExample.class
 cn\blooming\jxgjsj\model\mapper\UserMapper.class
-cn\blooming\jxgjsj\model\annotation\ShowLogger.class
 cn\blooming\jxgjsj\model\entity\UserExample$Criteria.class
 cn\blooming\jxgjsj\model\entity\UserExample$Criterion.class
-cn\blooming\jxgjsj\model\entity\DecorationStype.class
+cn\blooming\jxgjsj\model\annotation\ShowLogger.class
 cn\blooming\jxgjsj\model\entity\DecorationStypeDetailsExample$Criterion.class
+cn\blooming\jxgjsj\model\entity\DecorationStype.class
 cn\blooming\jxgjsj\model\entity\UserExample$GeneratedCriteria.class
 cn\blooming\jxgjsj\model\entity\HouseExample$GeneratedCriteria.class
 cn\blooming\jxgjsj\model\entity\ImageExample$Criteria.class
@@ -38,8 +38,8 @@ cn\blooming\jxgjsj\model\entity\DecorationStypeExample$Criteria.class
 cn\blooming\jxgjsj\model\entity\DecorationStypeDetailsExample$GeneratedCriteria.class
 cn\blooming\jxgjsj\model\entity\DecorationStypeExample$Criterion.class
 cn\blooming\jxgjsj\model\mapper\DecorationStypeDetailsMapper.class
-cn\blooming\jxgjsj\model\entity\Config.class
 cn\blooming\jxgjsj\model\entity\MenuExample.class
+cn\blooming\jxgjsj\model\entity\Config.class
 cn\blooming\jxgjsj\model\mapper\DecorationStypeMapper.class
 cn\blooming\jxgjsj\model\entity\HouseTypeExample$Criterion.class
 cn\blooming\jxgjsj\model\entity\HouseExample$Criteria.class
